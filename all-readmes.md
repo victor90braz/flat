@@ -154,67 +154,67 @@ In this updated README, we've incorporated the recent changes in class and inter
 1. Download Laragon from [laragon.org](https://laragon.org/download/index.html).
 
 2. Choose the desired version:
-   - [Download Laragon - Full (173 MB)](https://github.com/leokhoa/laragon/releases/download/6.0.0/laragon-wamp.exe)
+    - [Download Laragon - Full (173 MB)](https://github.com/leokhoa/laragon/releases/download/6.0.0/laragon-wamp.exe)
 
 ### Using PHP in the Terminal (CMD):
 
-- Check available PHP commands:
-  ```sh
-  php -h
-  ```
+-   Check available PHP commands:
+    ```sh
+    php -h
+    ```
 ````
 
-- Start a local PHP server:
-  ```sh
-  PHP -S localhost:8888
-  ```
+-   Start a local PHP server:
+    ```sh
+    PHP -S localhost:8888
+    ```
 
 ## PHP String Handling: Double Quotes vs. Single Quotes
 
 ### Double Quotes (" "):
 
-- Variables enclosed in double quotes are replaced with their values. This is known as variable interpolation.
+-   Variables enclosed in double quotes are replaced with their values. This is known as variable interpolation.
 
-- Escape sequences (e.g., `\n`, `\t`, `\"`) are interpreted and converted to special characters.
+-   Escape sequences (e.g., `\n`, `\t`, `\"`) are interpreted and converted to special characters.
 
-- Example:
-  ```php
-  $name = "John";
-  echo "Hello, $name!";
-  // Outputs: Hello, John!
-  ```
+-   Example:
+    ```php
+    $name = "John";
+    echo "Hello, $name!";
+    // Outputs: Hello, John!
+    ```
 
 ### Single Quotes (' '):
 
-- Variables inside single quotes are not interpolated; they are treated as literal strings.
+-   Variables inside single quotes are not interpolated; they are treated as literal strings.
 
-- Escape sequences are not interpreted within single quotes.
-- Everything inside single quotes is treated as a plain string.
+-   Escape sequences are not interpreted within single quotes.
+-   Everything inside single quotes is treated as a plain string.
 
-- Example:
-  ```php
-  $name = "John";
-  echo 'Hello, $name!';
-  // Outputs: Hello, $name!
-  ```
+-   Example:
+    ```php
+    $name = "John";
+    echo 'Hello, $name!';
+    // Outputs: Hello, $name!
+    ```
 
 The differences between the two code snippets you provided are related to how you output variables in PHP:
 
 1. **Using `<?= ... ?>` (Short Echo Tags):**
 
-   ```html
-   <img src="<?= $pathImages['logo'] ?>" alt="Logo" />
-   <h1 class="title"><?= $title ?></h1>
-   ```
+    ```html
+    <img src="<?= $pathImages['logo'] ?>" alt="Logo" />
+    <h1 class="title"><?= $title ?></h1>
+    ```
 
-   In this approach, you're using the short echo tags `<?= ... ?>`, which are a shorthand way of echoing variables in PHP. They automatically output the result of the expression within the tags. It's a more concise and cleaner way to echo variables.
+    In this approach, you're using the short echo tags `<?= ... ?>`, which are a shorthand way of echoing variables in PHP. They automatically output the result of the expression within the tags. It's a more concise and cleaner way to echo variables.
 
 2. **Using `<?php echo ... ?>`:**
-   ```html
-   <img src="<?php echo $pathImages['logo'] ?>" alt="Logo" />
-   <h1 class="title"><?php echo $title ?></h1>
-   ```
-   In this approach, you're using the traditional PHP syntax to echo variables. You explicitly use `<?php echo ... ?>` to output the content of the variable.
+    ```html
+    <img src="<?php echo $pathImages['logo'] ?>" alt="Logo" />
+    <h1 class="title"><?php echo $title ?></h1>
+    ```
+    In this approach, you're using the traditional PHP syntax to echo variables. You explicitly use `<?php echo ... ?>` to output the content of the variable.
 
 Both approaches achieve the same result, which is to insert the value of the variable into the HTML. However, the first approach using `<?= ... ?>` is considered more modern and concise, making the code cleaner and easier to read. It's often preferred in newer PHP code because it reduces verbosity.
 
@@ -234,20 +234,20 @@ GitHub Repository: [Dynamically Web Application](https://github.com/victor90braz
 
 2. **Choose the Desired Version:**
    Select the version that suits your needs:
-   - [Download Laragon - Full (173 MB)](https://github.com/leokhoa/laragon/releases/download/6.0.0/laragon-wamp.exe)
+    - [Download Laragon - Full (173 MB)](https://github.com/leokhoa/laragon/releases/download/6.0.0/laragon-wamp.exe)
 
 ### Using PHP in the Terminal (CMD):
 
-- **Check Available PHP Commands:**
-  ```sh
-  php -h
-  ```
+-   **Check Available PHP Commands:**
+    ```sh
+    php -h
+    ```
 ````
 
-- **Start a Local PHP Server:**
-  ```sh
-  php -S localhost:8888
-  ```
+-   **Start a Local PHP Server:**
+    ```sh
+    php -S localhost:8888
+    ```
 
 ## Database Query Example:
 
@@ -313,20 +313,20 @@ GitHub Repository: [Notes Mini Project](https://github.com/victor90braz/notes-mi
 
 2. **Choose the Desired Version:**
    Select the version that suits your needs:
-   - [Download Laragon - Full (173 MB)](https://github.com/leokhoa/laragon/releases/download/6.0.0/laragon-wamp.exe)
+    - [Download Laragon - Full (173 MB)](https://github.com/leokhoa/laragon/releases/download/6.0.0/laragon-wamp.exe)
 
 ### Using PHP in the Terminal (CMD):
 
-- **Check Available PHP Commands:**
-  ```sh
-  php -h
-  ```
+-   **Check Available PHP Commands:**
+    ```sh
+    php -h
+    ```
 ````
 
-- **Start a Local PHP Server:**
-  ```sh
-  php -S localhost:8888
-  ```
+-   **Start a Local PHP Server:**
+    ```sh
+    php -S localhost:8888
+    ```
 
 ## Database Query Example:
 
@@ -684,48 +684,48 @@ GitHub Repository: [Project Organization](https://github.com/victor90braz/projec
 
 2. **Choose the Desired Version:**
    Select the version that suits your needs:
-   - [Download Laragon - Full (173 MB)](https://github.com/leokhoa/laragon/releases/download/6.0.0/laragon-wamp.exe)
+    - [Download Laragon - Full (173 MB)](https://github.com/leokhoa/laragon/releases/download/6.0.0/laragon-wamp.exe)
 
 ### Using PHP in the Terminal (CMD):
 
-- **Check Available PHP Commands:**
-  ```sh
-  php -h
-  ```
+-   **Check Available PHP Commands:**
+    ```sh
+    php -h
+    ```
 ````
 
-- **Start a Local PHP Server:**
+-   **Start a Local PHP Server:**
 
-  ```sh
-  php -S localhost:8888 -t public
-  ```
+    ```sh
+    php -S localhost:8888 -t public
+    ```
 
-  - run local server
-    PHP -S localhost:8888 -t public
+    -   run local server
+        PHP -S localhost:8888 -t public
 
-- github
-  https://github.com/victor90braz/booking.git
+-   github
+    https://github.com/victor90braz/booking.git
 
-- install composer
-  composer init
-  composer install
-  composer dump-autoload
+-   install composer
+    composer init
+    composer install
+    composer dump-autoload
 
-- search package to install
-  composer search
+-   search package to install
+    composer search
 
-  - illuminate/collections
+    -   illuminate/collections
 
-- install package
-  composer require illuminate/collections
+-   install package
+    composer require illuminate/collections
 
-- run test
-  vendor/bin/pest
+-   run test
+    vendor/bin/pest
 
-- tailwind
-  https://tailwindui.com/components#product-application-ui
+-   tailwind
+    https://tailwindui.com/components#product-application-ui
 
-  <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+    <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -738,13 +738,13 @@ GitHub Repository: [Project Organization](https://github.com/victor90braz/projec
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-   [Simple, fast routing engine](https://laravel.com/docs/routing).
+-   [Powerful dependency injection container](https://laravel.com/docs/container).
+-   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+-   Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+-   Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+-   [Robust background job processing](https://laravel.com/docs/queues).
+-   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
@@ -760,17 +760,17 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 
 ### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/)**
-- **[OP.GG](https://op.gg)**
+-   **[Vehikl](https://vehikl.com/)**
+-   **[Tighten Co.](https://tighten.co)**
+-   **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+-   **[64 Robots](https://64robots.com)**
+-   **[Cubet Techno Labs](https://cubettech.com)**
+-   **[Cyber-Duck](https://cyber-duck.co.uk)**
+-   **[Many](https://www.many.co.uk)**
+-   **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+-   **[DevSquad](https://devsquad.com)**
+-   **[Curotec](https://www.curotec.com/)**
+-   **[OP.GG](https://op.gg)**
 
 ## Contributing
 
@@ -802,47 +802,47 @@ Examples:
 
 1. **One-to-One**: A User has one Profile.
 
-   ```php
-   // User model
-   public function profile() {
-       return $this->hasOne(Profile::class);
-   }
-   ```
+    ```php
+    // User model
+    public function profile() {
+        return $this->hasOne(Profile::class);
+    }
+    ```
 
 2. **One-to-Many**: A User has many Posts.
 
-   ```php
-   // User model
-   public function posts() {
-       return $this->hasMany(Post::class);
-   }
-   ```
+    ```php
+    // User model
+    public function posts() {
+        return $this->hasMany(Post::class);
+    }
+    ```
 
 3. **Many-to-Many**: Users can belong to multiple Roles, and Roles can have multiple Users.
 
-   ```php
-   // User model
-   public function roles() {
-       return $this->belongsToMany(Role::class);
-   }
-   ```
+    ```php
+    // User model
+    public function roles() {
+        return $this->belongsToMany(Role::class);
+    }
+    ```
 
 4. **Has-Many-Through**: A Country has many Users through Cities.
 
-   ```php
-   // Country model
-   public function users() {
-       return $this->hasManyThrough(User::class, City::class);
-   }
-   ```
+    ```php
+    // Country model
+    public function users() {
+        return $this->hasManyThrough(User::class, City::class);
+    }
+    ```
 
 5. **Polymorphic Relations**: Comments can belong to both Posts and Videos.
-   ```php
-   // Comment model
-   public function commentable() {
-       return $this->morphTo();
-   }
-   ```
+    ```php
+    // Comment model
+    public function commentable() {
+        return $this->morphTo();
+    }
+    ```
 
 These relationships simplify database querying and make it easier to work with related data in your Laravel application.
 
@@ -860,39 +860,39 @@ To get started with this project, follow these steps:
 
 1. Clone this repository to your local environment:
 
-   ```shell
-   git clone https://github.com/victor90braz/eloquent-relationship-braz.git
-   ```
+    ```shell
+    git clone https://github.com/victor90braz/eloquent-relationship-braz.git
+    ```
 
 2. Navigate to the project directory:
 
-   ```shell
-   cd eloquent-relationship
-   ```
+    ```shell
+    cd eloquent-relationship
+    ```
 
 3. Install the required dependencies using Composer:
 
-   ```shell
-   composer install
-   ```
+    ```shell
+    composer install
+    ```
 
 4. Create a copy of the `.env` file and configure your database connection settings:
 
-   ```shell
-   cp .env.example .env
-   ```
+    ```shell
+    cp .env.example .env
+    ```
 
 5. Generate an application key:
 
-   ```shell
-   php artisan key:generate
-   ```
+    ```shell
+    php artisan key:generate
+    ```
 
 6. Migrate the database to create the necessary tables:
 
-   ```shell
-   php artisan migrate
-   ```
+    ```shell
+    php artisan migrate
+    ```
 
 ## Usage
 
@@ -902,17 +902,17 @@ Before demonstrating the relationships, you need to create a `profile` schema an
 
 1. Create a migration for the `Profile` model:
 
-   ```shell
-   php artisan make:migration create_profiles_table
-   ```
+    ```shell
+    php artisan make:migration create_profiles_table
+    ```
 
 2. Open the newly created migration file at `database/migrations/yyyy_mm_dd_create_profiles_table.php` and define the schema for the `profiles` table.
 
 3. Run the migration to create the `profiles` table:
 
-   ```shell
-   php artisan migrate
-   ```
+    ```shell
+    php artisan migrate
+    ```
 
 ### Retrieve a User's Profile
 
@@ -920,29 +920,29 @@ You can retrieve a user's profile using Laravel's Eloquent relationships. Here's
 
 1. Start a Tinker session:
 
-   ```shell
-   php artisan tinker
-   ```
+    ```shell
+    php artisan tinker
+    ```
 
 2. Create a new `User` instance:
 
-   ```php
-   $user = new User();
-   ```
+    ```php
+    $user = new User();
+    ```
 
 3. Retrieve a user's profile by specifying the user's ID:
 
-   ```php
-   $profile = $user->find(2)->profile;
-   ```
+    ```php
+    $profile = $user->find(2)->profile;
+    ```
 
 4. You can also log the SQL queries executed by the application for debugging purposes:
 
-   ```php
-   DB::listen(function ($sql) {
-       var_dump($sql->sql, $sql->bindings);
-   });
-   ```
+    ```php
+    DB::listen(function ($sql) {
+        var_dump($sql->sql, $sql->bindings);
+    });
+    ```
 
 For more detailed examples and usage of each relationship type, please refer to the provided code in this repository.
 
@@ -1018,16 +1018,16 @@ $tag->posts()->attach(2)
 \App\Models\User::factory(5)->create();
 \App\Models\Post::factory(5)->create();
 
-- once the tables are created with user and posts then create the references
+-   once the tables are created with user and posts then create the references
 
-  # case post
+    # case post
 
-  $post = new App\Models\Post()
+    $post = new App\Models\Post()
     $post->find(1)->tags()->attach(2)
 
-  # case tag
+    # case tag
 
-  $tag = App\Models\Tag::first()
+    $tag = App\Models\Tag::first()
     $tag->posts()->attach(2)
 
 # debugar
@@ -1100,9 +1100,7 @@ npm run test LikeNotesTest
             - user_id
             - note_id
 
-
-            composer create-project laravel/laravel chirper
-
+composer create-project laravel/laravel chirper
 composer require laravel/breeze --dev
 php artisan breeze:install blade
 php artisan serve
@@ -1112,11 +1110,11 @@ php artisan route:list
 
 php artisan make:policy ChirpPolicy --model=Chirp
 
-- public function update(User $user, Chirp $chirp): bool
+-   public function update(User $user, Chirp $chirp): bool
     {
             //
             return $chirp->user()->is($user);
-  }
+    }
 
 php artisan make:notification NewChirp
 php artisan make:event ChirpCreated
@@ -1200,8 +1198,8 @@ SELECT * FROM `posts` RIGHT OUTER JOIN `comments` ON `comments`.`post_id` = `pos
 
 **SQL JOIN Notes:**
 
-- "LEFT OUTER JOIN" gets all records from `posts`.
-- "RIGHT OUTER JOIN" gets all records from `comments`.
+-   "LEFT OUTER JOIN" gets all records from `posts`.
+-   "RIGHT OUTER JOIN" gets all records from `comments`.
 
 **SQL Queries:**
 
@@ -1561,47 +1559,47 @@ Examples:
 
 1. **One-to-One**: A User has one Profile.
 
-   ```php
-   // User model
-   public function profile() {
-       return $this->hasOne(Profile::class);
-   }
-   ```
+    ```php
+    // User model
+    public function profile() {
+        return $this->hasOne(Profile::class);
+    }
+    ```
 
 2. **One-to-Many**: A User has many Posts.
 
-   ```php
-   // User model
-   public function posts() {
-       return $this->hasMany(Post::class);
-   }
-   ```
+    ```php
+    // User model
+    public function posts() {
+        return $this->hasMany(Post::class);
+    }
+    ```
 
 3. **Many-to-Many**: Users can belong to multiple Roles, and Roles can have multiple Users.
 
-   ```php
-   // User model
-   public function roles() {
-       return $this->belongsToMany(Role::class);
-   }
-   ```
+    ```php
+    // User model
+    public function roles() {
+        return $this->belongsToMany(Role::class);
+    }
+    ```
 
 4. **Has-Many-Through**: A Country has many Users through Cities.
 
-   ```php
-   // Country model
-   public function users() {
-       return $this->hasManyThrough(User::class, City::class);
-   }
-   ```
+    ```php
+    // Country model
+    public function users() {
+        return $this->hasManyThrough(User::class, City::class);
+    }
+    ```
 
 5. **Polymorphic Relations**: Comments can belong to both Posts and Videos.
-   ```php
-   // Comment model
-   public function commentable() {
-       return $this->morphTo();
-   }
-   ```
+    ```php
+    // Comment model
+    public function commentable() {
+        return $this->morphTo();
+    }
+    ```
 
 These relationships simplify database querying and make it easier to work with related data in your Laravel application.
 
@@ -1612,22 +1610,22 @@ This repository demonstrates various Eloquent relationships in Laravel, includin
 
 ## Table of Contents
 
-- [Relationship Types](#relationship-types)
-- [Setup](#setup)
-- [Usage](#usage)
-  - [Create a Profile Schema and Migrate](#create-a-profile-schema-and-migrate)
-  - [Get a User's Profile](#get-a-users-profile)
-- [DB Query Logging](#db-query-logging)
+-   [Relationship Types](#relationship-types)
+-   [Setup](#setup)
+-   [Usage](#usage)
+    -   [Create a Profile Schema and Migrate](#create-a-profile-schema-and-migrate)
+    -   [Get a User's Profile](#get-a-users-profile)
+-   [DB Query Logging](#db-query-logging)
 
 ## Relationship Types
 
 This project illustrates the following Eloquent relationship types:
 
-- One-to-One
-- One-to-Many
-- Many-to-Many
-- Has-Many-Through
-- Polymorphic Relations
+-   One-to-One
+-   One-to-Many
+-   Many-to-Many
+-   Has-Many-Through
+-   Polymorphic Relations
 
 ## Setup
 
@@ -1635,39 +1633,39 @@ To set up this project, follow these steps:
 
 1. Clone this repository to your local environment:
 
-   ```shell
-   git clone https://github.com/victor90braz/eloquent-relationship.git
-   ```
+    ```shell
+    git clone https://github.com/victor90braz/eloquent-relationship.git
+    ```
 
 2. Navigate to the project directory:
 
-   ```shell
-   cd eloquent-relationship
-   ```
+    ```shell
+    cd eloquent-relationship
+    ```
 
 3. Install the required dependencies using Composer:
 
-   ```shell
-   composer install
-   ```
+    ```shell
+    composer install
+    ```
 
 4. Create a copy of the `.env` file and configure your database connection settings:
 
-   ```shell
-   cp .env.example .env
-   ```
+    ```shell
+    cp .env.example .env
+    ```
 
 5. Generate an application key:
 
-   ```shell
-   php artisan key:generate
-   ```
+    ```shell
+    php artisan key:generate
+    ```
 
 6. Migrate the database to create the necessary tables:
 
-   ```shell
-   php artisan migrate
-   ```
+    ```shell
+    php artisan migrate
+    ```
 
 ## Usage
 
@@ -1677,17 +1675,17 @@ Before demonstrating the relationships, you need to create a `profile` schema an
 
 1. Create a migration for the `Profile` model:
 
-   ```shell
-   php artisan make:migration create_profiles_table
-   ```
+    ```shell
+    php artisan make:migration create_profiles_table
+    ```
 
 2. Open the newly created migration file at `database/migrations/yyyy_mm_dd_create_profiles_table.php` and define the schema for the `profiles` table.
 
 3. Run the migration to create the `profiles` table:
 
-   ```shell
-   php artisan migrate
-   ```
+    ```shell
+    php artisan migrate
+    ```
 
 ### Get a User's Profile
 
@@ -1695,31 +1693,31 @@ You can retrieve a user's profile using Laravel's Eloquent relationships. Here's
 
 1. Start a Tinker session:
 
-   ```shell
-   php artisan tinker
-   ```
+    ```shell
+    php artisan tinker
+    ```
 
 2. Create a new `User` instance:
 
-   ```php
-   $user = new User();
-   ```
+    ```php
+    $user = new User();
+    ```
 
 3. Retrieve a user's profile by specifying the user's ID:
 
-   ```php
-   $profile = $user->find(2)->profile;
-   ```
+    ```php
+    $profile = $user->find(2)->profile;
+    ```
 
 4. You can also log the SQL queries executed by the application using the following code:
 
-   ```php
-   DB::listen(function ($sql) {
-       var_dump($sql->sql, $sql->bindings);
-   });
-   ```
+    ```php
+    DB::listen(function ($sql) {
+        var_dump($sql->sql, $sql->bindings);
+    });
+    ```
 
-   This will help you see the SQL queries generated by Eloquent.
+    This will help you see the SQL queries generated by Eloquent.
 
 For more detailed examples and usage of each relationship type, please refer to the provided code in this repository.
 
@@ -1820,12 +1818,12 @@ This demonstrates how you can use Tinker to access your models and relationships
 
 ```
 
-- installation
-  composer create-project laravel/laravel app-example
-- command terminal
-  php artisan serve
+-   installation
+    composer create-project laravel/laravel app-example
+-   command terminal
+    php artisan serve
 
-  ## GitHub Repository
+    ## GitHub Repository
 
 Find the code and more on GitHub: [02-section Repository](https://github.com/victor90braz/02-section.git)
 
@@ -1891,9 +1889,9 @@ When prompted with `Do you really wish to run this command? (yes/no) [no]:`, ent
 
 ## Available Commands
 
-- `cache('posts.all')`: Retrieve the cached posts data.
-- `cache()->forget('posts.all')`: Forget (delete) the cached posts data.
-- `cache()->get('posts.all')`: Get the cached posts data.
+-   `cache('posts.all')`: Retrieve the cached posts data.
+-   `cache()->forget('posts.all')`: Forget (delete) the cached posts data.
+-   `cache()->get('posts.all')`: Get the cached posts data.
 
 Example:
 
@@ -1975,9 +1973,9 @@ When prompted with `Do you really wish to run this command? (yes/no) [no]:`, ent
 
 ## Available Commands
 
-- `cache('posts.all')`: Retrieve the cached posts data.
-- `cache()->forget('posts.all')`: Forget (delete) the cached posts data.
-- `cache()->get('posts.all')`: Get the cached posts data.
+-   `cache('posts.all')`: Retrieve the cached posts data.
+-   `cache()->forget('posts.all')`: Forget (delete) the cached posts data.
+-   `cache()->get('posts.all')`: Get the cached posts data.
 
 Example:
 
@@ -1998,7 +1996,7 @@ Example:
 
 ## GitHub Repository
 
-- Find the code and more on GitHub: [04-section-database Repository](https://github.com/victor90braz/04-section-database.git)
+-   Find the code and more on GitHub: [04-section-database Repository](https://github.com/victor90braz/04-section-database.git)
 
 ## Introduction
 
@@ -2148,29 +2146,31 @@ Here's a refactored HTML structure with inline styles:
 
 ```html
 <div
-  class="container"
-  style="max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f5f5f5;"
+    class="container"
+    style="max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f5f5f5;"
 >
-  <nav>
-    <ul style="list-style: none;">
-      <li
-        style="font-weight: bold; color: #007bff; text-decoration: underline;"
-      >
-        {{ $post->category->name }}
-      </li>
-    </ul>
-  </nav>
+    <nav>
+        <ul style="list-style: none;">
+            <li
+                style="font-weight: bold; color: #007bff; text-decoration: underline;"
+            >
+                {{ $post->category->name }}
+            </li>
+        </ul>
+    </nav>
 
-  <article style="margin-top: 20px; padding: 10px; background-color: #fff;">
-    <h1 style="font-size: 24px; margin-bottom: 10px;">{{ $post->title }}</h1>
-    <div>{!! $post->body !!}</div>
-  </article>
-  <a
-    href="/"
-    class="btn-go-back"
-    style="display: inline-block; margin-top: 20px; text-decoration: underline; color: #007bff;"
-    >Go Back</a
-  >
+    <article style="margin-top: 20px; padding: 10px; background-color: #fff;">
+        <h1 style="font-size: 24px; margin-bottom: 10px;">
+            {{ $post->title }}
+        </h1>
+        <div>{!! $post->body !!}</div>
+    </article>
+    <a
+        href="/"
+        class="btn-go-back"
+        style="display: inline-block; margin-top: 20px; text-decoration: underline; color: #007bff;"
+        >Go Back</a
+    >
 </div>
 ```
 
@@ -2178,21 +2178,21 @@ Here's a refactored HTML structure with inline styles:
 
 Here are some useful commands for working with the database:
 
-- Refresh and seed the database:
+-   Refresh and seed the database:
 
 ```bash
 php artisan migrate:refresh
 php artisan db:seed
 ```
 
-- Add fake data to the database:
+-   Add fake data to the database:
 
 ```bash
 php artisan tinker
 $cat = \App\Models\Category::factory(30)->create();
 ```
 
-- Retrieve data with relationships:
+-   Retrieve data with relationships:
 
 ```bash
 php artisan tinker
@@ -2204,7 +2204,7 @@ php artisan tinker
 
 ## GitHub Repository
 
-- Find the code and more on GitHub: [05-section Repository](https://github.com/victor90braz/05-section.git)
+-   Find the code and more on GitHub: [05-section Repository](https://github.com/victor90braz/05-section.git)
 
 ## Introduction
 
@@ -2285,21 +2285,21 @@ $post->category->name;
 
 Here are some useful commands for working with the database:
 
-- Refresh and seed the database:
+-   Refresh and seed the database:
 
 ```bash
 php artisan migrate:refresh
 php artisan db:seed
 ```
 
-- Add fake data to the database:
+-   Add fake data to the database:
 
 ```bash
 php artisan tinker
 $cat = \App\Models\Category::factory(30)->create();
 ```
 
-- Retrieve data with relationships:
+-   Retrieve data with relationships:
 
 ```bash
 php artisan tinker
@@ -2311,7 +2311,7 @@ php artisan tinker
 
 ## GitHub Repository
 
-- Find the code and more on GitHub: [06-section Repository](https://github.com/victor90braz/06-section.git)
+-   Find the code and more on GitHub: [06-section Repository](https://github.com/victor90braz/06-section.git)
 
 ## Introduction
 
@@ -2392,21 +2392,21 @@ $post->category->name;
 
 Here are some useful commands for working with the database:
 
-- Refresh and seed the database:
+-   Refresh and seed the database:
 
 ```bash
 php artisan migrate:refresh
 php artisan db:seed
 ```
 
-- Add fake data to the database:
+-   Add fake data to the database:
 
 ```bash
 php artisan tinker
 $cat = \App\Models\Category::factory(30)->create();
 ```
 
-- Retrieve data with relationships:
+-   Retrieve data with relationships:
 
 ```bash
 php artisan tinker
@@ -2437,7 +2437,7 @@ Route::get('/', function () {
 
 ## GitHub Repository
 
-- Find the code and more on GitHub: [06-section Repository](https://github.com/victor90braz/07-section.git)
+-   Find the code and more on GitHub: [06-section Repository](https://github.com/victor90braz/07-section.git)
 
 ## Introduction
 
@@ -2518,21 +2518,21 @@ $post->category->name;
 
 Here are some useful commands for working with the database:
 
-- Refresh and seed the database:
+-   Refresh and seed the database:
 
 ```bash
 php artisan migrate:refresh
 php artisan db:seed
 ```
 
-- Add fake data to the database:
+-   Add fake data to the database:
 
 ```bash
 php artisan tinker
 $cat = \App\Models\Category::factory(30)->create();
 ```
 
-- Retrieve data with relationships:
+-   Retrieve data with relationships:
 
 ```bash
 php artisan tinker
@@ -2650,21 +2650,21 @@ $post->category->name;
 
 Here are some useful commands for working with the database:
 
-- **Refresh and seed the database:**
+-   **Refresh and seed the database:**
 
 ```bash
 php artisan migrate:refresh
 php artisan db:seed
 ```
 
-- **Add fake data to the database:**
+-   **Add fake data to the database:**
 
 ```bash
 php artisan tinker
 $cat = \App\Models\Category::factory(30)->create();
 ```
 
-- **Retrieve data with relationships:**
+-   **Retrieve data with relationships:**
 
 ```bash
 php artisan tinker
@@ -2679,38 +2679,38 @@ Dealing with a large number of items, such as posts, requires implementing pagin
 
 1. In your route or controller, when retrieving a list of posts, use the `paginate` method to split the results into multiple pages. For example:
 
-   ```php
-   $posts = Post::latest()->filter(
-       request(['search', 'category', 'author'])
-   )->paginate(6)->withQueryString()
+    ```php
+    $posts = Post::latest()->filter(
+        request(['search', 'category', 'author'])
+    )->paginate(6)->withQueryString()
 
-   $posts = Post::latest()->filter(
-       request(['search', 'category', 'author'])
-   )->simplePaginate()->withQueryString()
-   ```
+    $posts = Post::latest()->filter(
+        request(['search', 'category', 'author'])
+    )->simplePaginate()->withQueryString()
+    ```
 
-   In this code, `paginate(6)` specifies that you want to display six posts per page. You can adjust this number according to your design and content.
+    In this code, `paginate(6)` specifies that you want to display six posts per page. You can adjust this number according to your design and content.
 
 2. To display pagination links in your view, you can use Laravel's built-in `links()` method. Add the following code to your view file to generate pagination links:
 
-   ```php
-   {{ $posts->links() }}
-   ```
+    ```php
+    {{ $posts->links() }}
+    ```
 
-   Including `{{ $posts->links() }}` in your view provides users with a user-friendly way to navigate through multiple pages of search results.
+    Including `{{ $posts->links() }}` in your view provides users with a user-friendly way to navigate through multiple pages of search results.
 
 ```html
 <x-layout>
-  @include ('posts._header')
+    @include ('posts._header')
 
-  <main class="max-w-6xl mx-auto mt-6 lg:mt-20 space-y-6">
-    @if ($posts->count())
-    <x-posts-grid :posts="$posts" />
+    <main class="max-w-6xl mx-auto mt-6 lg:mt-20 space-y-6">
+        @if ($posts->count())
+        <x-posts-grid :posts="$posts" />
 
-    {{ $posts->links() }} @else
-    <p class="text-center">No posts yet. Please check back later.</p>
-    @endif
-  </main>
+        {{ $posts->links() }} @else
+        <p class="text-center">No posts yet. Please check back later.</p>
+        @endif
+    </main>
 </x-layout>
 ```
 
@@ -2832,14 +2832,14 @@ $post->category->name;
 
 Here are some useful commands for working with the database:
 
-- **Refresh and seed the database:**
+-   **Refresh and seed the database:**
 
 ```bash
 php artisan migrate:refresh
 php artisan db:seed
 ```
 
-- **Add fake data to the database:**
+-   **Add fake data to the database:**
 
 ```bash
 php artisan tinker
@@ -2852,9 +2852,9 @@ $cat = \App\Models\Category::factory(30)->create();
 <form action="/" method="POST">@csrf</form>
 ```
 
-- `@csrf` -> always have to add it to the form to avoid error 419
+-   `@csrf` -> always have to add it to the form to avoid error 419
 
-- `store` function:
+-   `store` function:
 
 ```php
 public function store()
@@ -2870,7 +2870,7 @@ public function store()
 }
 ```
 
-- `Rule::unique('users', 'username')`
+-   `Rule::unique('users', 'username')`
 
 ```php
 'username' => [
@@ -2948,12 +2948,12 @@ Handle input values:
 
 ```html
 <input
-  class="border border-gray-400 p-2 w-full"
-  type="email"
-  name="email"
-  id="email"
-  required
-  value="{{ old('name') }}"
+    class="border border-gray-400 p-2 w-full"
+    type="email"
+    name="email"
+    id="email"
+    required
+    value="{{ old('name') }}"
 />
 ```
 
@@ -3057,7 +3057,7 @@ This code allows you to access the name of the post's category.
 
 Here are some useful commands for working with the database:
 
-- **Refresh and seed the database:**
+-   **Refresh and seed the database:**
 
 ```bash
 php artisan migrate:refresh
@@ -3066,7 +3066,7 @@ php artisan db:seed
 
 These commands refresh the database schema and seed it with sample data.
 
-- **Add fake data to the database using Tinker:**
+-   **Add fake data to the database using Tinker:**
 
 ```bash
 php artisan tinker
@@ -3081,9 +3081,9 @@ This allows you to add fake data to the database using Laravel's Tinker tool.
 <form action="/" method="POST">@csrf</form>
 ```
 
-- `@csrf` -> You must always include this in your form to prevent error 419 (CSRF token mismatch) when submitting forms.
+-   `@csrf` -> You must always include this in your form to prevent error 419 (CSRF token mismatch) when submitting forms.
 
-- `store` function:
+-   `store` function:
 
 ```php
 public function store()
@@ -3099,7 +3099,7 @@ public function store()
 }
 ```
 
-- `Rule::unique('users', 'username')`
+-   `Rule::unique('users', 'username')`
 
 ```php
 'username' => [
@@ -3179,9 +3179,9 @@ Or, at the end of the form:
 
 ```html
 <div class="mb-6">
-  @foreach ($errors->all() as $error)
-  <li class="text-red-500 text-xs">{{ $error }}</li>
-  @endforeach
+    @foreach ($errors->all() as $error)
+    <li class="text-red-500 text-xs">{{ $error }}</li>
+    @endforeach
 </div>
 ```
 
@@ -3191,12 +3191,12 @@ Handling input values in your forms:
 
 ```html
 <input
-  class="border border-gray-400 p-2 w-full"
-  type="email"
-  name="email"
-  id="email"
-  required
-  value="{{ old('name') }}"
+    class="border border-gray-400 p-2 w-full"
+    type="email"
+    name="email"
+    id="email"
+    required
+    value="{{ old('name') }}"
 />
 ```
 
@@ -3366,8 +3366,8 @@ Follow the [Mailchimp Quick Start Guide](https://mailchimp.com/developer/marketi
 
 ### Additional Documentation and Examples
 
-- [Mailchimp API Documentation](https://mailchimp.com/developer/marketing/api/account-exports/)
-- [Mailchimp Lists API Documentation](https://mailchimp.com/developer/marketing/api/lists/)
+-   [Mailchimp API Documentation](https://mailchimp.com/developer/marketing/api/account-exports/)
+-   [Mailchimp Lists API Documentation](https://mailchimp.com/developer/marketing/api/lists/)
 
 ### Sample API Calls
 
@@ -3483,10 +3483,10 @@ Route::post('/newsletter', (NewsletterController::class));
 
 This document outlines the architecture and key components of a newsletter subscription system within a Laravel application. The system involves the following components:
 
-- Interface
-- Controller
-- Implementation classes
-- Binding in the Laravel service container
+-   Interface
+-   Controller
+-   Implementation classes
+-   Binding in the Laravel service container
 
 ## 1. Interface Declaration (Newsletter)
 
@@ -3537,10 +3537,10 @@ This configuration allows the application to provide an instance of the `Mailchi
 
 ## Observations
 
-- The code follows a dependency injection pattern, making the system flexible and testable.
-- The system is configured to use the Mailchimp API for newsletter subscriptions, and the concrete implementation is `MailchimpNewsletter`.
-- Laravel's service container manages the binding of the `Newsletter` interface to the `MailchimpNewsletter` class, allowing for easy switching between newsletter providers.
-- This code is suitable for a Laravel application and is typically defined in a service provider.
+-   The code follows a dependency injection pattern, making the system flexible and testable.
+-   The system is configured to use the Mailchimp API for newsletter subscriptions, and the concrete implementation is `MailchimpNewsletter`.
+-   Laravel's service container manages the binding of the `Newsletter` interface to the `MailchimpNewsletter` class, allowing for easy switching between newsletter providers.
+-   This code is suitable for a Laravel application and is typically defined in a service provider.
 
 This README provides an overview of the newsletter subscription system's key components and their interactions within the application.
 
@@ -3707,8 +3707,13 @@ $attributes = request()->validate([
 ]);
 ```
 
-- add to display html
-  src="{{ asset('storage/' . $post->thumbnail) }}"
+# ex: asset
+
+-   add to display html
+    src="{{ asset('storage/' . $post->thumbnail) }}"
+
+<link rel="shortcut icon" href="{{ asset('storage/images/favicon.png') }}" type="image/x-icon">
+<img src="{{ asset('storage/' . 'images/favicon.png') }}" alt="favicon" width="50">
 
 This README provides a comprehensive guide to setting up the project, understanding the category selection form, the `store` function, database migration, and updating validation rules.
 
@@ -3730,28 +3735,28 @@ Mailpit was originally **inspired** by MailHog which is [no longer maintained](h
 
 ## Features
 
-- Runs entirely from a single [static binary](https://mailpit.axllent.org/docs/install/)
-- Modern web UI to view emails (formatted HTML, highlighted HTML source, text, headers, raw source, and MIME attachments
-  including image thumbnails), including optional [HTTPS](https://mailpit.axllent.org/docs/configuration/https/)
-- Optional [basic authentication](https://mailpit.axllent.org/docs/configuration/frontend-authentication/) for web UI & API
-- [HTML check](https://mailpit.axllent.org/docs/usage/html-check/) to test & score mail client compatibility with HTML emails
-- [Link check](https://mailpit.axllent.org/docs/usage/link-check/) to test message links (HTML & text) & linked images
-- [Create screenshots](https://mailpit.axllent.org/docs/usage/html-screenshots/) of HTML messages via web UI
-- Mobile and tablet HTML preview toggle in desktop mode
-- Advanced [mail search](https://mailpit.axllent.org/docs/usage/search-filters/)
-- [Message tagging](https://mailpit.axllent.org/docs/usage/tagging/)
-- Real-time web UI updates using web sockets for new mail & optional browser notifications for new mail (when accessed
-  via either HTTPS or `localhost` only)
-- SMTP server with optional [STARTTLS & SMTP authentication](https://mailpit.axllent.org/docs/configuration/smtp-authentication/) (including an
-  "accept any" mode)
-- [SMTP relaying](https://mailpit.axllent.org/docs/configuration/smtp-relay/) (message release) - relay messages via a different SMTP server
-  including an optional allowlist of accepted recipients
-- Fast SMTP processing & storing - approximately 70-100 emails per second depending on CPU, network speed & email size,
-  easily handling tens of thousands of emails
-- Configurable automatic email pruning (default keeps the most recent 500 emails)
-- A simple [REST API](https://mailpit.axllent.org/docs/api-v1/) for integration testing
-- Optional [webhook](https://mailpit.axllent.org/docs/integration/webhook/) for received messages
-- Multi-architecture [Docker images](https://mailpit.axllent.org/docs/install/docker/)
+-   Runs entirely from a single [static binary](https://mailpit.axllent.org/docs/install/)
+-   Modern web UI to view emails (formatted HTML, highlighted HTML source, text, headers, raw source, and MIME attachments
+    including image thumbnails), including optional [HTTPS](https://mailpit.axllent.org/docs/configuration/https/)
+-   Optional [basic authentication](https://mailpit.axllent.org/docs/configuration/frontend-authentication/) for web UI & API
+-   [HTML check](https://mailpit.axllent.org/docs/usage/html-check/) to test & score mail client compatibility with HTML emails
+-   [Link check](https://mailpit.axllent.org/docs/usage/link-check/) to test message links (HTML & text) & linked images
+-   [Create screenshots](https://mailpit.axllent.org/docs/usage/html-screenshots/) of HTML messages via web UI
+-   Mobile and tablet HTML preview toggle in desktop mode
+-   Advanced [mail search](https://mailpit.axllent.org/docs/usage/search-filters/)
+-   [Message tagging](https://mailpit.axllent.org/docs/usage/tagging/)
+-   Real-time web UI updates using web sockets for new mail & optional browser notifications for new mail (when accessed
+    via either HTTPS or `localhost` only)
+-   SMTP server with optional [STARTTLS & SMTP authentication](https://mailpit.axllent.org/docs/configuration/smtp-authentication/) (including an
+    "accept any" mode)
+-   [SMTP relaying](https://mailpit.axllent.org/docs/configuration/smtp-relay/) (message release) - relay messages via a different SMTP server
+    including an optional allowlist of accepted recipients
+-   Fast SMTP processing & storing - approximately 70-100 emails per second depending on CPU, network speed & email size,
+    easily handling tens of thousands of emails
+-   Configurable automatic email pruning (default keeps the most recent 500 emails)
+-   A simple [REST API](https://mailpit.axllent.org/docs/api-v1/) for integration testing
+-   Optional [webhook](https://mailpit.axllent.org/docs/integration/webhook/) for received messages
+-   Multi-architecture [Docker images](https://mailpit.axllent.org/docs/install/docker/)
 
 ## Installation
 
@@ -3761,9 +3766,9 @@ Mailpit runs as a single binary and can be installed in different ways:
 
 ### Install via package managers
 
-- **Mac**: `brew install mailpit` (to run automatically in the background: `brew services start mailpit`)
-- **Arch Linux**: available in the AUR as `mailpit`
-- **FreeBSD**: `pkg install mailpit`
+-   **Mac**: `brew install mailpit` (to run automatically in the background: `brew services start mailpit`)
+-   **Arch Linux**: available in the AUR as `mailpit`
+-   **FreeBSD**: `pkg install mailpit`
 
 ### Install via bash script (Linux & Mac)
 
@@ -3807,13 +3812,13 @@ This project demonstrates the use of object-oriented principles in PHP, featurin
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Classes](#classes)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+-   [Introduction](#introduction)
+-   [Classes](#classes)
+-   [Features](#features)
+-   [Installation](#installation)
+-   [Usage](#usage)
+-   [Contributing](#contributing)
+-   [License](#license)
 
 ## Introduction
 
@@ -3833,105 +3838,105 @@ The project is hosted on GitHub. You can find the repository [here](https://gith
 
 The `Team` class represents a sports team and includes the following methods:
 
-- `__construct($name, $members)`: Constructor to initialize the team with a name and an array of members.
-- `start(...$params)`: Static factory method to create a new `Team` instance.
-- `name()`: Get the name of the team.
-- `add($name)`: Add a new member to the team.
-- `members()`: Get the array of team members.
+-   `__construct($name, $members)`: Constructor to initialize the team with a name and an array of members.
+-   `start(...$params)`: Static factory method to create a new `Team` instance.
+-   `name()`: Get the name of the team.
+-   `add($name)`: Add a new member to the team.
+-   `members()`: Get the array of team members.
 
 ### Member Class
 
 The `Member` class represents an individual team member and includes the following methods:
 
-- `__construct($name)`: Constructor to initialize a member with a name.
-- `lastViewed()`: Method to get the last viewed information for the member.
+-   `__construct($name)`: Constructor to initialize a member with a name.
+-   `lastViewed()`: Method to get the last viewed information for the member.
 
 ## Features
 
-- Implementation of the `Team` class with methods for managing team information.
-- Implementation of the `Member` class for representing individual members of the team.
+-   Implementation of the `Team` class with methods for managing team information.
+-   Implementation of the `Member` class for representing individual members of the team.
 
 ## Installation
 
 1. Clone the repository or download the ZIP file.
 2. Install any necessary dependencies using the provided `composer.json` file:
 
-   ```bash
-   composer install
-   ```
+    ```bash
+    composer install
+    ```
 
-   # Object-Oriented Principles in PHP
+    # Object-Oriented Principles in PHP
 
-   This project demonstrates the use of object-oriented principles in PHP, featuring a `Team` class and a `Member` class.
+    This project demonstrates the use of object-oriented principles in PHP, featuring a `Team` class and a `Member` class.
 
-   ## Table of Contents
+    ## Table of Contents
 
-   - [Introduction](#introduction)
-   - [Classes](#classes)
-   - [Features](#features)
-   - [Installation](#installation)
-   - [Usage](#usage)
-   - [Contributing](#contributing)
-   - [License](#license)
+    - [Introduction](#introduction)
+    - [Classes](#classes)
+    - [Features](#features)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Contributing](#contributing)
+    - [License](#license)
 
-   ## Introduction
+    ## Introduction
 
-   This project showcases object-oriented programming principles in PHP, providing implementations of the `Team` and `Member` classes. It illustrates concepts like constructors, static methods, encapsulation, and method abstraction.
+    This project showcases object-oriented programming principles in PHP, providing implementations of the `Team` and `Member` classes. It illustrates concepts like constructors, static methods, encapsulation, and method abstraction.
 
-   ## Run a local PHP server in the "constructs" directory:
+    ## Run a local PHP server in the "constructs" directory:
 
-   php -S localhost:8888 -t constructs
+    php -S localhost:8888 -t constructs
 
-   ## Classes
+    ## Classes
 
-   ## GitHub Repository
+    ## GitHub Repository
 
-   The project is hosted on GitHub. You can find the repository [here](https://github.com/victor90braz/02-object-oriented-principles-php).
+    The project is hosted on GitHub. You can find the repository [here](https://github.com/victor90braz/02-object-oriented-principles-php).
 
-   ### Team Class
+    ### Team Class
 
-   The `Team` class represents a sports team and includes the following methods:
+    The `Team` class represents a sports team and includes the following methods:
 
-   - `__construct($name, $members)`: Constructor to initialize the team with a name and an array of members.
-   - `start(...$params)`: Static factory method to create a new `Team` instance.
-   - `name()`: Get the name of the team.
-   - `add($name)`: Add a new member to the team.
-   - `members()`: Get the array of team members.
+    - `__construct($name, $members)`: Constructor to initialize the team with a name and an array of members.
+    - `start(...$params)`: Static factory method to create a new `Team` instance.
+    - `name()`: Get the name of the team.
+    - `add($name)`: Add a new member to the team.
+    - `members()`: Get the array of team members.
 
-   ### Member Class
+    ### Member Class
 
-   The `Member` class represents an individual team member and includes the following methods:
+    The `Member` class represents an individual team member and includes the following methods:
 
-   - `__construct($name)`: Constructor to initialize a member with a name.
-   - `lastViewed()`: Method to get the last viewed information for the member.
+    - `__construct($name)`: Constructor to initialize a member with a name.
+    - `lastViewed()`: Method to get the last viewed information for the member.
 
-   ## Features
+    ## Features
 
-   - Implementation of the `Team` class with methods for managing team information.
-   - Implementation of the `Member` class for representing individual members of the team.
+    - Implementation of the `Team` class with methods for managing team information.
+    - Implementation of the `Member` class for representing individual members of the team.
 
-   ## Installation
+    ## Installation
 
-   1. Clone the repository or download the ZIP file.
-   2. Install any necessary dependencies using the provided `composer.json` file:
+    1. Clone the repository or download the ZIP file.
+    2. Install any necessary dependencies using the provided `composer.json` file:
 
-      ```bash
-      composer install
-      ```
+        ```bash
+        composer install
+        ```
 
-      # Object-Oriented Principles in PHP
+        # Object-Oriented Principles in PHP
 
 This project demonstrates the use of object-oriented principles in PHP, featuring a `Team` class and a `Member` class.
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Classes](#classes)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+-   [Introduction](#introduction)
+-   [Classes](#classes)
+-   [Features](#features)
+-   [Installation](#installation)
+-   [Usage](#usage)
+-   [Contributing](#contributing)
+-   [License](#license)
 
 ## Introduction
 
@@ -3951,196 +3956,196 @@ The project is hosted on GitHub. You can find the repository [here](https://gith
 
 The `Team` class represents a sports team and includes the following methods:
 
-- `__construct($name, $members)`: Constructor to initialize the team with a name and an array of members.
-- `start(...$params)`: Static factory method to create a new `Team` instance.
-- `name()`: Get the name of the team.
-- `add($name)`: Add a new member to the team.
-- `members()`: Get the array of team members.
+-   `__construct($name, $members)`: Constructor to initialize the team with a name and an array of members.
+-   `start(...$params)`: Static factory method to create a new `Team` instance.
+-   `name()`: Get the name of the team.
+-   `add($name)`: Add a new member to the team.
+-   `members()`: Get the array of team members.
 
 ### Member Class
 
 The `Member` class represents an individual team member and includes the following methods:
 
-- `__construct($name)`: Constructor to initialize a member with a name.
-- `lastViewed()`: Method to get the last viewed information for the member.
+-   `__construct($name)`: Constructor to initialize a member with a name.
+-   `lastViewed()`: Method to get the last viewed information for the member.
 
 ## Features
 
-- Implementation of the `Team` class with methods for managing team information.
-- Implementation of the `Member` class for representing individual members of the team.
+-   Implementation of the `Team` class with methods for managing team information.
+-   Implementation of the `Member` class for representing individual members of the team.
 
 ## Installation
 
 1. Clone the repository or download the ZIP file.
 2. Install any necessary dependencies using the provided `composer.json` file:
 
-   ```bash
-   composer install
-   ```
+    ```bash
+    composer install
+    ```
 
-   # Object-Oriented Principles in PHP
+    # Object-Oriented Principles in PHP
 
-   This project demonstrates the use of object-oriented principles in PHP, featuring a `Team` class and a `Member` class.
+    This project demonstrates the use of object-oriented principles in PHP, featuring a `Team` class and a `Member` class.
 
-   ## Table of Contents
+    ## Table of Contents
 
-   - [Introduction](#introduction)
-   - [Classes](#classes)
-   - [Features](#features)
-   - [Installation](#installation)
-   - [Usage](#usage)
-   - [Contributing](#contributing)
-   - [License](#license)
+    - [Introduction](#introduction)
+    - [Classes](#classes)
+    - [Features](#features)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Contributing](#contributing)
+    - [License](#license)
 
-   ## Introduction
+    ## Introduction
 
-   This project showcases object-oriented programming principles in PHP, providing implementations of the `Team` and `Member` classes. It illustrates concepts like constructors, static methods, encapsulation, and method abstraction.
+    This project showcases object-oriented programming principles in PHP, providing implementations of the `Team` and `Member` classes. It illustrates concepts like constructors, static methods, encapsulation, and method abstraction.
 
-   ## Run a local PHP server in the "constructs" directory:
+    ## Run a local PHP server in the "constructs" directory:
 
-   php -S localhost:8888 -t constructs
+    php -S localhost:8888 -t constructs
 
-   ## Classes
+    ## Classes
 
-   ## GitHub Repository
+    ## GitHub Repository
 
-   The project is hosted on GitHub. You can find the repository [here](https://github.com/victor90braz/03-inheritance.git).
+    The project is hosted on GitHub. You can find the repository [here](https://github.com/victor90braz/03-inheritance.git).
 
-   ### Team Class
+    ### Team Class
 
-   The `Team` class represents a sports team and includes the following methods:
+    The `Team` class represents a sports team and includes the following methods:
 
-   - `__construct($name, $members)`: Constructor to initialize the team with a name and an array of members.
-   - `start(...$params)`: Static factory method to create a new `Team` instance.
-   - `name()`: Get the name of the team.
-   - `add($name)`: Add a new member to the team.
-   - `members()`: Get the array of team members.
+    - `__construct($name, $members)`: Constructor to initialize the team with a name and an array of members.
+    - `start(...$params)`: Static factory method to create a new `Team` instance.
+    - `name()`: Get the name of the team.
+    - `add($name)`: Add a new member to the team.
+    - `members()`: Get the array of team members.
 
-   ### Member Class
+    ### Member Class
 
-   The `Member` class represents an individual team member and includes the following methods:
+    The `Member` class represents an individual team member and includes the following methods:
 
-   - `__construct($name)`: Constructor to initialize a member with a name.
-   - `lastViewed()`: Method to get the last viewed information for the member.
+    - `__construct($name)`: Constructor to initialize a member with a name.
+    - `lastViewed()`: Method to get the last viewed information for the member.
 
-   ## Features
+    ## Features
 
-   - Implementation of the `Team` class with methods for managing team information.
-   - Implementation of the `Member` class for representing individual members of the team.
+    - Implementation of the `Team` class with methods for managing team information.
+    - Implementation of the `Member` class for representing individual members of the team.
 
-   ## Installation
+    ## Installation
 
-   1. Clone the repository or download the ZIP file.
-   2. Install any necessary dependencies using the provided `composer.json` file:
+    1. Clone the repository or download the ZIP file.
+    2. Install any necessary dependencies using the provided `composer.json` file:
 
-      ```bash
-      composer install
-      ```
+        ```bash
+        composer install
+        ```
 
-      # Object-Oriented Principles in PHP
+        # Object-Oriented Principles in PHP
 
-      This project demonstrates the use of object-oriented principles in PHP, featuring a `Team` class and a `Member` class.
+        This project demonstrates the use of object-oriented principles in PHP, featuring a `Team` class and a `Member` class.
 
-      ## Table of Contents
+        ## Table of Contents
 
-      - [Introduction](#introduction)
-      - [Classes](#classes)
-      - [Features](#features)
-      - [Installation](#installation)
-      - [Usage](#usage)
-      - [Contributing](#contributing)
-      - [License](#license)
+        - [Introduction](#introduction)
+        - [Classes](#classes)
+        - [Features](#features)
+        - [Installation](#installation)
+        - [Usage](#usage)
+        - [Contributing](#contributing)
+        - [License](#license)
 
-      ## Introduction
+        ## Introduction
 
-      This project showcases object-oriented programming principles in PHP, providing implementations of the `Team` and `Member` classes. It illustrates concepts like constructors, static methods, encapsulation, and method abstraction.
+        This project showcases object-oriented programming principles in PHP, providing implementations of the `Team` and `Member` classes. It illustrates concepts like constructors, static methods, encapsulation, and method abstraction.
 
-      ## Run a local PHP server in the "constructs" directory:
+        ## Run a local PHP server in the "constructs" directory:
 
-      php -S localhost:8888 -t constructs
+        php -S localhost:8888 -t constructs
 
-      ## Classes
+        ## Classes
 
-      ## GitHub Repository
+        ## GitHub Repository
 
-      The project is hosted on GitHub. You can find the repository [here](https://github.com/victor90braz/03-inheritance.git).
+        The project is hosted on GitHub. You can find the repository [here](https://github.com/victor90braz/03-inheritance.git).
 
-      ### Team Class
+        ### Team Class
 
-      The `Team` class represents a sports team and includes the following methods:
+        The `Team` class represents a sports team and includes the following methods:
 
-      - `__construct($name, $members)`: Constructor to initialize the team with a name and an array of members.
-      - `start(...$params)`: Static factory method to create a new `Team` instance.
-      - `name()`: Get the name of the team.
-      - `add($name)`: Add a new member to the team.
-      - `members()`: Get the array of team members.
+        - `__construct($name, $members)`: Constructor to initialize the team with a name and an array of members.
+        - `start(...$params)`: Static factory method to create a new `Team` instance.
+        - `name()`: Get the name of the team.
+        - `add($name)`: Add a new member to the team.
+        - `members()`: Get the array of team members.
 
-      ### Member Class
+        ### Member Class
 
-      The `Member` class represents an individual team member and includes the following methods:
+        The `Member` class represents an individual team member and includes the following methods:
 
-      - `__construct($name)`: Constructor to initialize a member with a name.
-      - `lastViewed()`: Method to get the last viewed information for the member.
+        - `__construct($name)`: Constructor to initialize a member with a name.
+        - `lastViewed()`: Method to get the last viewed information for the member.
 
-      ## Features
+        ## Features
 
-      - Implementation of the `Team` class with methods for managing team information.
-      - Implementation of the `Member` class for representing individual members of the team.
+        - Implementation of the `Team` class with methods for managing team information.
+        - Implementation of the `Member` class for representing individual members of the team.
 
-      ## Installation
+        ## Installation
 
-      1. Clone the repository or download the ZIP file.
-      2. Install any necessary dependencies using the provided `composer.json` file:
-         ```bash
-         composer install
-         ```
+        1. Clone the repository or download the ZIP file.
+        2. Install any necessary dependencies using the provided `composer.json` file:
+            ```bash
+            composer install
+            ```
 
-      Sure, I'll provide a brief explanation of the code and then create a README explaining the key concepts like interfaces, implementation, etc.
+        Sure, I'll provide a brief explanation of the code and then create a README explaining the key concepts like interfaces, implementation, etc.
 
-      ### Code Explanation:
+        ### Code Explanation:
 
-      1. **Setting Up Paths and Including Files:**
-         The code starts by setting up a `$basePath` and requiring a file named "functions.php" using the concatenated `$basePath`.
+        1. **Setting Up Paths and Including Files:**
+           The code starts by setting up a `$basePath` and requiring a file named "functions.php" using the concatenated `$basePath`.
 
-      2. **Interface Definition:**
-         An interface named `NewsLetter` is defined with a single method signature `subscribe($email)`. Interfaces in PHP allow for the declaration of method signatures without implementation details.
+        2. **Interface Definition:**
+           An interface named `NewsLetter` is defined with a single method signature `subscribe($email)`. Interfaces in PHP allow for the declaration of method signatures without implementation details.
 
-      3. **Implementing the Interface:**
-         Two classes, `CampaignMonitor` and `Drip`, both implement the `NewsLetter` interface. They provide concrete implementations for the `subscribe($email)` method, fulfilling the requirements specified by the `NewsLetter` interface.
+        3. **Implementing the Interface:**
+           Two classes, `CampaignMonitor` and `Drip`, both implement the `NewsLetter` interface. They provide concrete implementations for the `subscribe($email)` method, fulfilling the requirements specified by the `NewsLetter` interface.
 
-      4. **Controller and Subscription Handling:**
-         The `NewsLetterSubscriptionsController` class defines a method `store` that accepts an instance of a class implementing the `NewsLetter` interface. It then calls the `subscribe` method on the provided instance with a predefined email.
+        4. **Controller and Subscription Handling:**
+           The `NewsLetterSubscriptionsController` class defines a method `store` that accepts an instance of a class implementing the `NewsLetter` interface. It then calls the `subscribe` method on the provided instance with a predefined email.
 
-      5. **Usage:**
-         Finally, an instance of `NewsLetterSubscriptionsController` is created, and the `store` method is invoked with an instance of `CampaignMonitor`.
+        5. **Usage:**
+           Finally, an instance of `NewsLetterSubscriptionsController` is created, and the `store` method is invoked with an instance of `CampaignMonitor`.
 
-      ### README:
+        ### README:
 
-      ## Understanding the PHP Code
+        ## Understanding the PHP Code
 
-      This PHP code demonstrates the usage of interfaces and class implementation in object-oriented programming. Here's a breakdown of the key concepts:
+        This PHP code demonstrates the usage of interfaces and class implementation in object-oriented programming. Here's a breakdown of the key concepts:
 
-      ### 1. Interfaces:
+        ### 1. Interfaces:
 
-      An interface in PHP defines a contract, specifying method signatures without implementing their functionality. Classes implementing an interface must provide concrete implementations for all the methods defined in the interface. In this code, `NewsLetter` is an interface that requires implementing a `subscribe($email)` method.
+        An interface in PHP defines a contract, specifying method signatures without implementing their functionality. Classes implementing an interface must provide concrete implementations for all the methods defined in the interface. In this code, `NewsLetter` is an interface that requires implementing a `subscribe($email)` method.
 
-      ### 2. Implementing an Interface:
+        ### 2. Implementing an Interface:
 
-      Classes `CampaignMonitor` and `Drip` both implement the `NewsLetter` interface by providing the required `subscribe($email)` method. This allows these classes to adhere to the contract defined by the `NewsLetter` interface.
+        Classes `CampaignMonitor` and `Drip` both implement the `NewsLetter` interface by providing the required `subscribe($email)` method. This allows these classes to adhere to the contract defined by the `NewsLetter` interface.
 
-      ### 3. Class Implementation and Usage:
+        ### 3. Class Implementation and Usage:
 
-      - `CampaignMonitor` and `Drip` classes are examples of implementing the `NewsLetter` interface. They define the specific behavior for subscribing a user using CampaignMonitor and Drip, respectively.
+        - `CampaignMonitor` and `Drip` classes are examples of implementing the `NewsLetter` interface. They define the specific behavior for subscribing a user using CampaignMonitor and Drip, respectively.
 
-      - The `NewsLetterSubscriptionsController` class contains a method `store` that accepts an instance of a class implementing the `NewsLetter` interface. Inside this method, the `subscribe` method of the provided instance is called, allowing for subscription handling based on the specific implementation of the `NewsLetter` interface.
+        - The `NewsLetterSubscriptionsController` class contains a method `store` that accepts an instance of a class implementing the `NewsLetter` interface. Inside this method, the `subscribe` method of the provided instance is called, allowing for subscription handling based on the specific implementation of the `NewsLetter` interface.
 
-      ### 4. Usage Example:
+        ### 4. Usage Example:
 
-      In the usage example provided in the code, an instance of `CampaignMonitor` is created and passed to the `store` method of `NewsLetterSubscriptionsController`. This demonstrates how the `NewsLetterSubscriptionsController` can work with different implementations of the `NewsLetter` interface, such as `CampaignMonitor` and `Drip`, through the common contract defined by the interface.
+        In the usage example provided in the code, an instance of `CampaignMonitor` is created and passed to the `store` method of `NewsLetterSubscriptionsController`. This demonstrates how the `NewsLetterSubscriptionsController` can work with different implementations of the `NewsLetter` interface, such as `CampaignMonitor` and `Drip`, through the common contract defined by the interface.
 
-      Feel free to reach out if you have any further questions or need additional clarification!
+        Feel free to reach out if you have any further questions or need additional clarification!
 
-      # Object-Oriented Principles in PHP
+        # Object-Oriented Principles in PHP
 
 ## Run a local PHP server in the "constructs" directory:
 
@@ -4161,22 +4166,22 @@ GitHub Repository: [Sessions and Authentication GitHub Repository](https://githu
 
 2. **Choose the Desired Version:**
    Select a version that suits your needs:
-   - [Download Laragon Full (173 MB)](https://github.com/leokhoa/laragon/releases/download/6.0.0/laragon-wamp.exe)
+    - [Download Laragon Full (173 MB)](https://github.com/leokhoa/laragon/releases/download/6.0.0/laragon-wamp.exe)
 
 ### Using PHP in the Terminal (CMD):
 
-- **Check Available PHP Commands:**
-  You can check the available PHP commands using the following in the terminal:
+-   **Check Available PHP Commands:**
+    You can check the available PHP commands using the following in the terminal:
 
-  ```sh
-  php -h
-  ```
+    ```sh
+    php -h
+    ```
 
-- **Start a Local PHP Server:**
-  To start a local PHP server, use the following command in the terminal:
-  ```sh
-  php -S localhost:8888 -t public
-  ```
+-   **Start a Local PHP Server:**
+    To start a local PHP server, use the following command in the terminal:
+    ```sh
+    php -S localhost:8888 -t public
+    ```
 
 To initialize a session in the application (usually at the beginning of `index.php` in the `public` folder), use:
 
@@ -4186,33 +4191,33 @@ $_SESSION['name'] = 'victor braz';
 <?= $_SESSION['name'] ?? $heading ?>
 ```
 
-- To get PHP information, run:
+-   To get PHP information, run:
 
-  ```sh
-  php --info
-  ```
+    ```sh
+    php --info
+    ```
 
-- To find where session data has been saved if it's not temporary, check the session save path using:
+-   To find where session data has been saved if it's not temporary, check the session save path using:
 
-  ```sh
-  session.save_path
-  ```
+    ```sh
+    session.save_path
+    ```
 
-- If you want to find a session in the docs, create a file named `get_tmpdir.php` and save the following content:
+-   If you want to find a session in the docs, create a file named `get_tmpdir.php` and save the following content:
 
-  ```php
-  <?php
-  echo sys_get_temp_dir();
-  ?>
-  ```
+    ```php
+    <?php
+    echo sys_get_temp_dir();
+    ?>
+    ```
 
-  Run the command to get the path:
+    Run the command to get the path:
 
-  ```sh
-  php get_tmpdir.php
-  ```
+    ```sh
+    php get_tmpdir.php
+    ```
 
-  # Laracasts Course - Session 6
+    # Laracasts Course - Session 6
 
 This repository is part of the Laracasts Course on Refactoring Techniques.
 
@@ -4227,23 +4232,23 @@ GitHub Repository: [Refactoring Techniques GitHub Repository](https://github.com
 
 2. **Choose the Desired Version:**
    Select a version that suits your needs:
-   - [Download Laragon Full (173 MB)](https://github.com/leokhoa/laragon/releases/download/6.0.0/laragon-wamp.exe)
+    - [Download Laragon Full (173 MB)](https://github.com/leokhoa/laragon/releases/download/6.0.0/laragon-wamp.exe)
 
 ### Using PHP in the Terminal (CMD):
 
-- **Check Available PHP Commands:**
-  To explore available PHP commands, execute the following in the terminal:
+-   **Check Available PHP Commands:**
+    To explore available PHP commands, execute the following in the terminal:
 
-  ```sh
-  php -h
-  ```
+    ```sh
+    php -h
+    ```
 
-- **Start a Local PHP Server:**
-  Start a local PHP server using the following command in the terminal:
+-   **Start a Local PHP Server:**
+    Start a local PHP server using the following command in the terminal:
 
-  ```sh
-  php -S localhost:8888 -t public
-  ```
+    ```sh
+    php -S localhost:8888 -t public
+    ```
 
 To initialize a session in the application (usually at the beginning of `index.php` in the `public` folder), use:
 
@@ -4253,113 +4258,113 @@ $_SESSION['name'] = 'victor braz';
 <?= $_SESSION['name'] ?? $heading ?>
 ```
 
-- To get PHP information, run:
+-   To get PHP information, run:
 
-  ```sh
-  php --info
-  ```
+    ```sh
+    php --info
+    ```
 
-- To find where session data has been saved if it's not temporary, check the session save path using:
+-   To find where session data has been saved if it's not temporary, check the session save path using:
 
-  ```sh
-  session.save_path
-  ```
+    ```sh
+    session.save_path
+    ```
 
-- If you want to find a session in the docs, create a file named `get_tmpdir.php` and save the following content:
+-   If you want to find a session in the docs, create a file named `get_tmpdir.php` and save the following content:
 
-  ```php
-  <?php
-  echo sys_get_temp_dir();
-  ?>
-  ```
+    ```php
+    <?php
+    echo sys_get_temp_dir();
+    ?>
+    ```
 
-  Run the command to get the path:
+    Run the command to get the path:
 
-  ```sh
-  php get_tmpdir.php
-  ```
+    ```sh
+    php get_tmpdir.php
+    ```
 
 ### Composer Setup and Usage:
 
-- **Run Composer in the Terminal (cd):**
+-   **Run Composer in the Terminal (cd):**
 
-  Run the following command to initialize a new composer.json file:
+    Run the following command to initialize a new composer.json file:
 
-  ```sh
-  composer init
-  ```
+    ```sh
+    composer init
+    ```
 
-  Follow the on-screen prompts to generate the configuration.
+    Follow the on-screen prompts to generate the configuration.
 
-- **Composer Installation:**
+-   **Composer Installation:**
 
-  Install the necessary dependencies using the following command:
+    Install the necessary dependencies using the following command:
 
-  ```sh
-  composer install
-  ```
+    ```sh
+    composer install
+    ```
 
-- **Composer Autoload:**
+-   **Composer Autoload:**
 
-  After installation, generate the autoload files with:
+    After installation, generate the autoload files with:
 
-  ```sh
-  composer dump-autoload
-  ```
+    ```sh
+    composer dump-autoload
+    ```
 
-- **Add Vendor Directory to .gitignore:**
+-   **Add Vendor Directory to .gitignore:**
 
-  It's recommended to add the vendor directory to .gitignore:
+    It's recommended to add the vendor directory to .gitignore:
 
-  ```sh
-  echo '/vendor/' >> .gitignore
-  ```
+    ```sh
+    echo '/vendor/' >> .gitignore
+    ```
 
 ### Package Management:
 
-- **Getting Packages:**
+-   **Getting Packages:**
 
-  There are two ways to acquire a package:
+    There are two ways to acquire a package:
 
-  - **Using Terminal:**
-    Run the following command to search for packages:
+    -   **Using Terminal:**
+        Run the following command to search for packages:
+
+        ```sh
+        composer search package_name
+        ```
+
+    -   **Direct Download:**
+        Visit [Packagist - The PHP Package Repository](https://packagist.org) and search for the package you need. You can then download it manually or install it via Composer.
+
+-   **Installing Packages:**
+
+    Use the following command to install a package via Composer:
 
     ```sh
-    composer search package_name
+    composer require package_name
     ```
-
-  - **Direct Download:**
-    Visit [Packagist - The PHP Package Repository](https://packagist.org) and search for the package you need. You can then download it manually or install it via Composer.
-
-- **Installing Packages:**
-
-  Use the following command to install a package via Composer:
-
-  ```sh
-  composer require package_name
-  ```
 
 ### Testing with Pest Framework:
 
-- **Pest Installation:**
+-   **Pest Installation:**
 
-  To install Pest, follow the instructions provided in the [Pest Documentation](https://pestphp.com/docs/installation).
+    To install Pest, follow the instructions provided in the [Pest Documentation](https://pestphp.com/docs/installation).
 
-- **Initialize Pest:**
+-   **Initialize Pest:**
 
-  Run the following command to initialize Pest in your project:
+    Run the following command to initialize Pest in your project:
 
-  ```sh
-  ./vendor/bin/pest --init
-  ```
+    ```sh
+    ./vendor/bin/pest --init
+    ```
 
-- **Running Tests:**
+-   **Running Tests:**
 
-  Use the following command to run tests with Pest:
+    Use the following command to run tests with Pest:
 
-  ```sh
-  vendor/bin/pest
-  ```
+    ```sh
+    vendor/bin/pest
+    ```
 
 For more information about Pest, visit the [Pest GitHub repository](https://github.com/pestphp/pest).
 
