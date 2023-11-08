@@ -28,6 +28,7 @@ In this project, I'll be building a web application called "Flat" using the Lara
 
     ```
     php artisan serve
+    npm run dev
     ```
 
     This will start a development server, and you can access your project in your browser at the provided URL (usually `http://127.0.0.1:8000`).
