@@ -9,7 +9,9 @@
     <title>Flat</title>
 </head>
 <body>
-    <h1 class="text-3xl font-bold underline">Flat</h1>
-    <img src="{{ asset('storage/' . 'images/favicon.png') }}" alt="favicon" width="50">
+    <div class="flex justify-center gap-1">
+        <h1 class="text-3xl font-bold underline">Flat</h1>
+        <img src="{{ asset('storage/' . 'images/favicon.png') }}" alt="favicon" width="50">
+    </div>
 </body>
 </html>
