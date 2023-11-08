@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="{{ asset('storage/images/favicon.png') }}" type="image/x-icon">
     <link rel="stylesheet" href="/app.css">
-    <title>Document</title>
+    <script src="/app.js"></script>
+    <title>Flat</title>
 </head>
 <body>
     <h1>Flat</h1>
