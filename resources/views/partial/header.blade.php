@@ -9,4 +9,4 @@
     <title>Flat</title>
 </head>
 <body>
-@include('components.navigate.template')
+
