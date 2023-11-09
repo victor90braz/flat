@@ -10,7 +10,7 @@
         </div>
     </div>
     <div class="p-6">
-        <p class="text-gray-600 mb-2">Price: €{{ $flat->price }} per night</p>
+        <p class="text-gray-600 mb-2">€{{ $flat->price }}/month</p>
         <p class="text-gray-700 mb-4">{{ $flat->description }}</p>
         <p class="text-gray-800 mb-2">Location: {{ $flat->location }}</p>
 
