@@ -3,12 +3,14 @@
 @section('content')
     <div class="container">
         @php
-            $flats = range(1, 4);
+            $flats = (new App\Models\Flat())->all();
         @endphp
 
         @foreach ($flats as $flat)
             <div class="mb-6 w-fit m-2">
-                @include('components.flats.template')
+                @include('components.flats.template', [
+                    'flat' => $flat
+                ])
             </div>
         @endforeach
     </div>

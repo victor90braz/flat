@@ -3,9 +3,6 @@
         <img src="https://plus.unsplash.com/premium_photo-1680100256112-2e1231d9d0df?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Spacious City Flat" class="w-full h-64 object-cover object-center rounded-t-lg">
         <div class="absolute inset-0 bg-gradient-to-t from-black opacity-50"></div>
         <div class="absolute inset-0 flex items-center justify-center">
-            @php
-                $flat = App\Models\Flat::find(1);
-            @endphp
             <h2 class="text-white text-3xl font-semibold">{{ $flat->title }}</h2>
         </div>
     </div>
