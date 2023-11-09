@@ -1,9 +1,22 @@
-<div class="bg-white shadow-md rounded-lg overflow-hidden p-2">
-    <img src="https://plus.unsplash.com/premium_photo-1680100256112-2e1231d9d0df?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Spacious City Flat" class="w-full h-64 object-cover object-center">
+<div class="bg-white shadow-md rounded-lg overflow-hidden p-4">
+    <div class="relative overflow-hidden">
+        <img src="https://plus.unsplash.com/premium_photo-1680100256112-2e1231d9d0df?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Spacious City Flat" class="w-full h-64 object-cover object-center rounded-t-lg">
+        <div class="absolute inset-0 bg-gradient-to-t from-black opacity-50"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            @php
+                $flat = App\Models\Flat::find(1);
+            @endphp
+            <h2 class="text-white text-3xl font-semibold">{{ $flat->title }}</h2>
+        </div>
+    </div>
     <div class="p-6">
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Spacious City Flat</h3>
-        <p class="text-gray-600 mb-4">2 bedrooms, 1 bathroom</p>
-        <p class="text-lg font-bold text-gray-900">$1200/mo</p>
-        <a href="#" class="mt-4 text-blue-500 hover:underline">View Details</a>
+        <p class="text-gray-600 mb-2">Price: €{{ $flat->price }} per night</p>
+        <p class="text-gray-700 mb-4">{{ $flat->description }}</p>
+        <p class="text-gray-800 mb-2">Location: {{ $flat->location }}</p>
+
+        <div class="flex items-center">
+            <a href="#" class="text-blue-500 hover:underline mr-4">View Details</a>
+            <span class="text-gray-500">Updated {{ now()->diffForHumans($flat->updated_at) }}</span>
+        </div>
     </div>
 </div>
