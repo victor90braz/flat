@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="{{ asset('storage/images/favicon.png') }}" type="image/x-icon">
-    @vite('resources/css/app.css')
-    <title>Flat</title>
-</head>
-<body>
+@include('partial.header')
     <nav class="bg-green-800">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div class="relative flex h-16 items-center justify-between">
@@ -53,5 +43,4 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+@include('partial.footer')
