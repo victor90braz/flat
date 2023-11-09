@@ -17,7 +17,10 @@ class FlatFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'title' => $this->faker->word,
+            'price' => $this->faker->randomNumber(4),
+            'description' => $this->faker->paragraph(),
+            'location' => $this->faker->city
         ];
     }
 }

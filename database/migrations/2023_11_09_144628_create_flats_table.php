@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('flats', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('price');
+            $table->text('description');
+            $table->string('location');
             $table->timestamps();
         });
     }
