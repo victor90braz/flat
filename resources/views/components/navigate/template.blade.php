@@ -9,9 +9,9 @@
         <div class="flex space-x-4">
             <a href="/" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Dashboard</a>
             <a href="/flats" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Flats</a>
+            <a href="/flats/details" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Detail</a>
         </div>
         </div>
     </div>
     </div>
 </nav>
-

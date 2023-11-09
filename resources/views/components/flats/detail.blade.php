@@ -8,9 +8,11 @@
     </div>
     <div class="p-6">
         <p class="text-gray-600 mb-2">€{{ $flat->price }}/month</p>
+        <p class="text-gray-700 mb-4">{{ $flat->description }}</p>
+        <p class="text-gray-800 mb-2">Location: {{ $flat->location }}</p>
 
         <div class="flex items-center">
-            <a href="/flats/details" class="text-blue-500 hover:underline mr-4">View Details</a>
+            <a href="#" class="text-blue-500 hover:underline mr-4">View Details</a>
             <span class="text-gray-500">Updated {{ now()->diffForHumans($flat->updated_at) }}</span>
         </div>
     </div>
