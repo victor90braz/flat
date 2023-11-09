@@ -7,7 +7,9 @@
         @endphp
 
         @foreach ($flats as $flat)
-            @include('components.flats.template')
+            <div class="mb-6 w-fit m-2">
+                @include('components.flats.template')
+            </div>
         @endforeach
     </div>
 @endsection
