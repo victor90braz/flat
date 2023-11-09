@@ -1,3 +1,5 @@
-@include('partial.header')
+@extends('app')
+
+@section('content')
     @include('components.flats.template')
-@include('partial.footer')
+@endsection
