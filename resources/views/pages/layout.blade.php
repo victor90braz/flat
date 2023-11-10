@@ -6,7 +6,7 @@
     <ul class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4 mt-6">
         @foreach ($flats as $flat)
             <li>
-                @include('components.flats.template', [
+                @include('components.flat.template', [
                     'flat' => $flat
                 ])
             </li>

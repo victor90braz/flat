@@ -10,7 +10,7 @@
 
         @foreach ($flats as $flat)
             <li>
-                @include('components.flats.template', [
+                @include('components.flat.template', [
                     'flat' => $flat
                 ])
             </li>

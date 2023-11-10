@@ -7,14 +7,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [FlatController::class, 'index']);
 
 Route::get('flats', function () {
-    return view('pages/flats');
+    return view('pages/flat');
 });
 
 Route::get('detail/{id}', function ($id) {
 
     $flat = Flat::find($id);
 
-    return view('components/flats/detail', [
+    return view('components/flat/detail', [
         'id' => $id,
         'flat' => $flat
     ]);
