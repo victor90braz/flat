@@ -9,7 +9,7 @@
         </div>
 
         <div class="mb-4">
-            <p class="text-gray-600">${{ $flat->price }}</p>
+            <p class="text-gray-600">${{ $flat->price }}/monthly</p>
         </div>
 
         <div class="mb-4">
