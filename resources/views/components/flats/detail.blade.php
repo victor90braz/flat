@@ -1,6 +1,4 @@
-<h1 class="text-2xl font-bold mb-4 ml-4">Details Flat</h1>
-
-<div class="bg-white shadow-md rounded-lg overflow-hidden p-2">
+<div class="bg-white shadow-md rounded-lg overflow-hidden m-4">
     <div class="relative overflow-hidden">
         <img src="https://plus.unsplash.com/premium_photo-1680100256112-2e1231d9d0df?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Spacious City Flat" class="w-full h-64 object-cover object-center rounded-t-lg">
         <div class="absolute inset-0 bg-gradient-to-t from-black opacity-50"></div>
