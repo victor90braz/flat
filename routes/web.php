@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FlatController;
+use App\Models\Flat;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [FlatController::class, 'index']);
@@ -10,8 +11,12 @@ Route::get('flats', function () {
 });
 
 Route::get('detail/{id}', function ($id) {
+
+    $flat = Flat::find($id);
+
     return view('components/flats/detail', [
-        'id' => $id
+        'id' => $id,
+        'flat' => $flat
     ]);
 });
 
