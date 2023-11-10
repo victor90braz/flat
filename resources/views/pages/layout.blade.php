@@ -11,7 +11,7 @@
         </section>
 
         <nav class="mt-4">
-            <a href="#" class="inline-block bg-white text-blue-500 px-4 py-2 rounded-md mr-4">Register</a>
+            <a href="register" class="inline-block bg-white text-blue-500 px-4 py-2 rounded-md mr-4">Register</a>
             <a href="#" class="inline-block bg-white text-blue-500 px-4 py-2 rounded-md">Login</a>
         </nav>
     </header>
