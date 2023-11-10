@@ -1,7 +1,9 @@
 <nav class="mx-auto max-w-7xl p-2">
     <div class="relative flex h-16 items-center justify-between">
         <div class="flex flex-shrink-0 items-center">
-            <img class="h-8 w-auto" src="{{ asset('storage/' . 'images/favicon.png') }}" alt="Logo Company">
+            <a href="/">
+                <img class="h-12 w-auto" src="{{ asset('storage/' . 'images/favicon.png') }}" alt="Logo Company">
+            </a>
         </div>
 
         <div class="hidden sm:block ml-6">
