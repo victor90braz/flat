@@ -1,17 +1,19 @@
 @extends('app')
 
 @section('content')
-    <div class="container">
+    <h1 class="text-2xl font-bold mb-4 ml-4">All Flats</h1>
+
+    <ul class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4 mt-6">
         @php
             $flats = (new App\Models\Flat())->all();
         @endphp
 
         @foreach ($flats as $flat)
-            <div class="mb-6 w-fit m-2">
+            <li>
                 @include('components.flats.template', [
                     'flat' => $flat
                 ])
-            </div>
+            </li>
         @endforeach
-    </div>
+    </ul>
 @endsection
