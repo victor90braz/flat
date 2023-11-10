@@ -21,6 +21,6 @@ class RegisterController extends Controller
 
         (new User())->create($attributes);
 
-        return redirect('/');
+        return redirect('/')->with('success', 'Registration successful! Welcome to our community.');
     }
 }
