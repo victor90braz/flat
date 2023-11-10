@@ -1,10 +1,9 @@
 <?php
 
+use App\Http\Controllers\FlatController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('pages/layout');
-});
+Route::get('/', [FlatController::class, 'index']);
 
 Route::get('flats', function () {
     return view('pages/flats');
