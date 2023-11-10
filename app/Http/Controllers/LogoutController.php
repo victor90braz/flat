@@ -8,6 +8,6 @@ class LogoutController extends Controller
 
         auth()->logout();
 
-        return redirect('/');
+        return redirect('/')->with('success', 'You have been successfully logged out. See you next time!');
     }
 }
