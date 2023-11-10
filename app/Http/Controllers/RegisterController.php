@@ -10,4 +10,9 @@ class RegisterController extends Controller
 
         return view("components.register.index");
     }
+
+    public function store()
+    {
+        dd(request()->all());
+    }
 }

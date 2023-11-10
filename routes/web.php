@@ -10,5 +10,6 @@ Route::get('detail/{id}', [FlatController::class, 'detailPage']);
 
 
 Route::get('register', [RegisterController::class, 'index']);
+Route::post('register', [RegisterController::class, 'store']);
 
 
