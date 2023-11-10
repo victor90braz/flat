@@ -9,6 +9,10 @@ Route::get('flats', function () {
     return view('pages/flats');
 });
 
-Route::get('/flats/details', function () {
-    return view('pages/flat-detail');
+Route::get('detail/{id}', function ($id) {
+    return view('components/flats/detail', [
+        'id' => $id
+    ]);
 });
+
+
