@@ -2,7 +2,6 @@
     <div class="relative flex h-16 items-center justify-between">
         <div class="flex flex-shrink-0 items-center">
             <img class="h-8 w-auto" src="{{ asset('storage/' . 'images/favicon.png') }}" alt="Logo Company">
-            <h1 class="uppercase ml-2">flats</h1>
         </div>
 
         <div class="hidden sm:block ml-6">
