@@ -8,7 +8,9 @@
 
         <div class="hidden sm:block ml-6">
             <div class="flex space-x-4 items-center">
-                <p>Welcome, <span class="text-blue-700 uppercase">{{ Auth::user()->name }}</span></p>
+                @if(Auth::user())
+                    <p>Welcome, <span class="text-blue-700 uppercase">{{ Auth::user()->name }}</span></p>
+                @endif
                 <a href="/" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
                 <a href="/flats" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Flats</a>
                 <a href="/logout" class="block bg-blue-500 text-white rounded-md px-3 py-2 text-base font-medium" aria-current="page">Logout</a>
