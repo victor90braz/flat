@@ -30,18 +30,23 @@
     </header>
 
     <main>
-        <ul class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4 mt-6">
-            @foreach ($flats as $flat)
-                <li>
-                    @include('components.flat.template', [
-                        'flat' => $flat
-                    ])
-                </li>
-            @endforeach
-        </ul>
+        @if ($flats->count() > 0)
+            <ul class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4 mt-6">
+                @foreach ($flats as $flat)
+                    <li>
+                        @include('components.flat.template', [
+                            'flat' => $flat
+                        ])
+                    </li>
+                @endforeach
+            </ul>
 
-        <div class="mt-4 bg-black">
-            {{ $flats->links() }}
-        </div>
+            <div class="mt-4">
+                {{ $flats->links() }}
+            </div>
+        @else
+            <p>No flats found.</p>
+        @endif
     </main>
+
 @endsection
