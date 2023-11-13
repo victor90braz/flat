@@ -7,7 +7,7 @@
         </div>
     </div>
     <div class="p-6">
-        <p class="text-gray-600 mb-2">€{{ $flat->price }}/month</p>
+        <p class="text-gray-600 mb-2">€ {{ $flat->price }}/month</p>
 
         <div class="flex items-center">
             <a href="detail/{{$flat->id}}" class="text-blue-500 hover:underline mr-4">View Details</a>
