@@ -2,15 +2,14 @@
 
 @section('content')
     @if(session('success'))
-        <div id="success-message" class="mt-6 bg-green-100 border-l-4 border-green-500 text-green-700 p-4">
+        <div id="success-message" class="absolute bottom-0 right-0 bg-green-100 border-l-4 border-green-500 text-green-700 p-4 z-50">
             <p>{{ session('success') }}</p>
         </div>
-
-        <script>
-            setTimeout(function() {
-                document.getElementById('success-message').style.display = 'none';
-            }, 1500);
-        </script>
+    <script>
+        setTimeout(function() {
+            document.getElementById('success-message').style.display = 'none';
+        }, 2000);
+    </script>
     @endif
 
     <header class="bg-blue-500 text-white p-4 shadow-md">
