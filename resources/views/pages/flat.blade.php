@@ -5,7 +5,9 @@
 
     <ul class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4 mt-6">
         @php
-            $flats = (new App\Models\Flat())->all();
+            $flats = App\Models\Flat::all()->filter(function ($flat) {
+                return $flat->user_id == 2;
+            });
         @endphp
 
         @foreach ($flats as $flat)
