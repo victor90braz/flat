@@ -6,12 +6,12 @@ use App\Models\Flat;
 
 class FlatController extends Controller
 {
-    public function index() {
+        public function index() {
 
-        return view('pages.layout', [
-            'flats' => Flat::all()
-        ]);
-    }
+            return view('pages.layout', [
+                'flats' => Flat::latest()->simplePaginate(6)->withQueryString()
+            ]);
+        }
 
     public function allFlats() {
 
