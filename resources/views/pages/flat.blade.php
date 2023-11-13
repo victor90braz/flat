@@ -1,10 +1,10 @@
 @extends('app')
 
 @section('content')
-    <h2 class="text-2xl font-bold mb-4 ml-4">All Flats</h2>
+    <h2 class="text-2xl font-bold mb-4 ml-4">My Flats</h2>
 
     @php
-        $flats = Auth::user() ? App\Models\Flat::where('user_id', Auth::user()->id)->paginate(3) : collect();
+        $flats = Auth::user() ? App\Models\Flat::where('user_id', Auth::user()->id)->simplePaginate(3) : collect();
     @endphp
 
     @if ($flats->count() > 0)
