@@ -58,8 +58,10 @@ class FlatController extends Controller
         return redirect('/')->with('success', 'new flat created!! ');
     }
 
-    public function edit()
+    public function edit($id)
     {
-        return view('components.flat.edit');
+        return view('components.flat.edit', [
+            'flat' => Flat::find($id)
+        ]);
     }
 }

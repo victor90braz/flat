@@ -15,12 +15,17 @@
         </div>
     </div>
 
-    <form action="delete/{{$flat->id}}" method="POST">
-        @csrf
-        @method('DELETE')
+    <div class="flex flex-row justify-center gap-2 mt-4">
+        <form action="delete/{{$flat->id}}" method="POST">
+            @csrf
+            @method('DELETE')
 
-        <button type="submit" class="bg-red-500 p-2 rounded-md">DELETE</button>
-    </form>
+            <button type="submit" class="bg-red-500 p-2 rounded-md">DELETE</button>
+        </form>
+
+        <a href="flat/edit/{{$flat->id}}" class="bg-green-500 p-2 rounded-md">Edit</a>
+    </div>
+
 </div>
 
 

@@ -14,28 +14,30 @@
         <div>
           <label for="title" class="block text-sm font-medium leading-6 text-gray-900">TITLE</label>
           <div class="mt-2">
-            <input id="title" name="title" type="text" autocomplete="current-title" required class="block w-full rounded-md border-0 py-1.5 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <input id="title" name="title" type="text" value="{{ $flat->title }}" autocomplete="current-title" required class="block w-full rounded-md border-0 py-1.5 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
 
         <div>
           <label for="price" class="block text-sm font-medium leading-6 text-gray-900">PRICE</label>
           <div class="mt-2">
-            <input id="price" name="price" type="number" step="0.01" autocomplete="current-price" required class="block w-full rounded-md border-0 py-1.5 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <input id="price" name="price" type="number" value="{{ $flat->price }}" step="0.01" autocomplete="current-price" required class="block w-full rounded-md border-0 py-1.5 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
 
         <div>
           <label for="description" class="block text-sm font-medium leading-6 text-gray-900">DESCRIPTION</label>
           <div class="mt-2">
-            <textarea name="description" id="description" cols="50" rows="5" class="block w-full rounded-md border-0 py-1.5 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+            <textarea name="description" id="description" cols="50" rows="5" class="block w-full rounded-md border-0 py-1.5 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                {{ $flat->description }}
+            </textarea>
           </div>
         </div>
 
         <div>
           <label for="location" class="block text-sm font-medium leading-6 text-gray-900">LOCATION</label>
           <div class="mt-2">
-            <input id="location" name="location" type="text" autocomplete="current-location" required class="block w-full rounded-md border-0 py-1.5 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <input id="location" name="location" type="text" value="{{ $flat->location }}" autocomplete="current-location" required class="block w-full rounded-md border-0 py-1.5 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
 
