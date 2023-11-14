@@ -9,8 +9,9 @@
     </div>
 
     <div class="sm:mx-auto sm:w-full sm:max-w-md">
-      <form class="space-y-6" action="store" method="POST">
-        @csrf
+        <form class="space-y-6" action="/flat/update/{{ $flat->id }}" method="POST">
+            @csrf
+            @method('PATCH')
         <div>
           <label for="title" class="block text-sm font-medium leading-6 text-gray-900">TITLE</label>
           <div class="mt-2">

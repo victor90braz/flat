@@ -13,6 +13,7 @@ Route::delete('delete/{id}', [FlatController::class, 'delete']);
 Route::get('flat/create', [FlatController::class, 'create']);
 Route::post('flat/store', [FlatController::class, 'store']);
 Route::get('flat/edit/{id}', [FlatController::class, 'edit']);
+Route::patch('/flat/update/{id}', [FlatController::class, 'update']);
 
 Route::get('register', [RegisterController::class, 'create']);
 Route::post('register', [RegisterController::class, 'store']);

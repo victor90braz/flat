@@ -64,4 +64,21 @@ class FlatController extends Controller
             'flat' => Flat::find($id)
         ]);
     }
+
+    public function update($id)
+    {
+        $flat = Flat::find($id);
+
+        $attributes = request()->validate([
+            'title' => ['required'],
+            'price' => ['required'],
+            'description' => ['required'],
+            'location' => ['required']
+        ]);
+
+        $flat->update($attributes);
+
+        return redirect('/')->with('success', 'Flat updated successfully!');
+    }
+
 }
