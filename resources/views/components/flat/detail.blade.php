@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="bg-white shadow-md rounded-lg overflow-hidden p-6">
-        <h1 class="text-2xl font-semibold mb-4">Detail</h1>
+        <h1 class="text-2xl font-semibold mb-4">Check Flat Details</h1>
 
         <div class="mb-4">
             <p class="text-lg font-semibold">{{ $flat->title }}</p>
