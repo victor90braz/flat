@@ -10,7 +10,7 @@ Route::get('/', [FlatController::class, 'index']);
 Route::get('flats', [FlatController::class, 'allFlats']);
 Route::get('detail/{id}', [FlatController::class, 'detailPage']);
 Route::delete('delete/{id}', [FlatController::class, 'delete']);
-Route::get('flats/create', [FlatController::class, 'create']);
+Route::get('flat/create', [FlatController::class, 'create']);
 
 Route::get('register', [RegisterController::class, 'create']);
 Route::post('register', [RegisterController::class, 'store']);

@@ -36,6 +36,8 @@ class FlatController extends Controller
 
     public function create()
     {
-        dd("page created");
+        //dd("page created");
+
+        return view('components.flat.create');
     }
 }
