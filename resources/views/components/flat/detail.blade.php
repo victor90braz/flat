@@ -14,7 +14,7 @@
 
         <div class="mb-4">
             <label class="block text-sm font-medium text-gray-600 mb-2" for="description">Description:</label>
-            <textarea name="description" id="description" cols="30" rows="5" class="w-full border rounded-md p-2">{{ $flat->description }}</textarea>
+            <textarea name="description" id="description" cols="30" rows="5" class="w-full border rounded-md p-2" readonly>{{ $flat->description }}</textarea>
         </div>
 
         <div class="mb-4">
