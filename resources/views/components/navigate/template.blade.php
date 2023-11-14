@@ -30,6 +30,15 @@
                     </div>
 
                     <div class="btm-nav">
+                        <a href="/flat/create" aria-current="page" class="flex flex-col items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                            </svg>
+                            New Flat
+                        </a>
+                    </div>
+
+                    <div class="btm-nav">
                         <a href="/logout" class="flex flex-col items-center text-red-600 hover:text-red-700" aria-current="page">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -55,6 +64,7 @@
             <a href="/" class="block bg-gray-900 text-white rounded-md px-3 py-2 text-base font-medium hover:bg-gray-700" aria-current="page">Home</a>
             @if(Auth::user())
                 <a href="/flats" class="block bg-gray-900 text-white rounded-md px-3 py-2 text-base font-medium hover:bg-gray-700" aria-current="page">My Flats</a>
+                <a href="/flat/create" class="block bg-gray-900 text-white rounded-md px-3 py-2 text-base font-medium hover:bg-gray-700" aria-current="page">New Flat</a>
                 <a href="/logout" class = "block bg-red-900 text-white rounded-md px-3 py-2 text-base font-medium hover:bg-red-700" aria-current="page">Logout</a>
             @endif
         </div>
