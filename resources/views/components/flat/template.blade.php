@@ -14,4 +14,13 @@
             <span class="text-gray-500">Updated {{ now()->diffForHumans($flat->updated_at) }}</span>
         </div>
     </div>
+
+    <form action="delete/{{$flat->id}}" method="POST">
+        @csrf
+        @method('DELETE')
+
+        <button type="submit" class="bg-red-500 p-2 rounded-md">DELETE</button>
+    </form>
 </div>
+
+

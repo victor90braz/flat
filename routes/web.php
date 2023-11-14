@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [FlatController::class, 'index']);
 Route::get('flats', [FlatController::class, 'allFlats']);
 Route::get('detail/{id}', [FlatController::class, 'detailPage']);
+Route::delete('delete/{id}', [FlatController::class, 'delete']);
 
 
 Route::get('register', [RegisterController::class, 'create']);
@@ -18,3 +19,4 @@ Route::get('login', [LoginController::class, 'create']);
 Route::post('login', [LoginController::class, 'store']);
 
 Route::get('logout', [LogoutController::class, 'destroy']);
+

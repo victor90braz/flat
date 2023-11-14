@@ -27,4 +27,11 @@ class FlatController extends Controller
             'flat' => Flat::find($id)
         ]);
     }
+
+    public function delete($id) {
+
+        Flat::find($id)->delete();
+
+        return redirect('/')->with('success', 'deleted correct');
+    }
 }
