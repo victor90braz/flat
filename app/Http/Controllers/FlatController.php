@@ -60,7 +60,6 @@ class FlatController extends Controller
 
     public function edit()
     {
-
-        dd('edit route');
+        return view('components.flat.edit');
     }
 }
