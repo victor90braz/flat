@@ -33,4 +33,9 @@ class FlatController extends Controller
 
         return redirect('/')->with('success', 'The item was successfully deleted.');
     }
+
+    public function create()
+    {
+        dd("page created");
+    }
 }
