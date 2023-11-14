@@ -9,6 +9,14 @@ class Flat extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'title',
+        'user_id',
+        'price',
+        'description',
+        'location',
+    ];
+
     public function user()
     {
         return $this->belongsTo(User::class);

@@ -3,15 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Models\Flat;
+use Illuminate\Support\Facades\Auth;
 
 class FlatController extends Controller
 {
-        public function index() {
+    public function index() {
 
-            return view('pages.layout', [
-                'flats' => Flat::latest()->simplePaginate(6)->withQueryString()
-            ]);
-        }
+        return view('pages.layout', [
+            'flats' => Flat::latest()->simplePaginate(6)->withQueryString()
+        ]);
+    }
 
     public function allFlats() {
 
@@ -43,6 +44,17 @@ class FlatController extends Controller
 
     public function store()
     {
-        dd(request()->all());
+
+        $attributes = request()->validate([
+            'title' => ['required'],
+            'price' => ['required'],
+            'description' => ['required'],
+            'location' => ['required']
+        ]);
+
+        $attributes['user_id'] = Auth::id();
+        Flat::create($attributes);
+
+        return redirect('/')->with('success', 'new flat created!! ');
     }
 }
