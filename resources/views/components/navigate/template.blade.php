@@ -55,10 +55,7 @@
             <a href="/" class="block bg-gray-900 text-white rounded-md px-3 py-2 text-base font-medium hover:bg-gray-700" aria-current="page">Home</a>
             @if(Auth::user())
                 <a href="/flats" class="block bg-gray-900 text-white rounded-md px-3 py-2 text-base font-medium hover:bg-gray-700" aria-current="page">My Flats</a>
-
-                <a href="/logout" class="flex items-center text-red-600 hover:text-red-700" aria-current="page">
-                    <small>Logout</small>
-                </a>
+                <a href="/logout" class = "block bg-red-900 text-white rounded-md px-3 py-2 text-base font-medium hover:bg-red-700" aria-current="page">Logout</a>
             @endif
         </div>
     </div>
