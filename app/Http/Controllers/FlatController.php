@@ -40,4 +40,9 @@ class FlatController extends Controller
 
         return view('components.flat.create');
     }
+
+    public function store()
+    {
+        dd(request()->all());
+    }
 }
