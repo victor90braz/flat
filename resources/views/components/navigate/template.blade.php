@@ -5,7 +5,7 @@
                 <img class="h-12 w-auto" src="{{ asset('storage/images/favicon.png') }}" alt="Logo Company">
             </a>
             @if(Auth::user())
-                <p>Welcome, {{ Auth::user()->name }}</p>
+                <p>Welcome, {{ ucfirst(Auth::user()->name) }}</p>
             @endif
         </div>
 
