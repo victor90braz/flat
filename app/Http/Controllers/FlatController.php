@@ -32,6 +32,6 @@ class FlatController extends Controller
 
         Flat::find($id)->delete();
 
-        return redirect('/')->with('success', 'deleted correct');
+        return redirect('/')->with('success', 'The item was successfully deleted.');
     }
 }
