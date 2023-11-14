@@ -23,7 +23,6 @@ class FlatController extends Controller
     public function detailPage($id) {
 
         return view('components/flat/detail', [
-            'id' => $id,
             'flat' => Flat::find($id)
         ]);
     }
