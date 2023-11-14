@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-    <div class="bg-white shadow-md rounded-lg overflow-hidden p-6">
+    <div class="bg-white shadow-md rounded-lg overflow-hidden p-2 ml-4 mr-4 mb-2 mt-2">
         <h1 class="text-2xl font-semibold mb-4">Check Flat Details</h1>
 
         <div class="mb-4">
