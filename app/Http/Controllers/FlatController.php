@@ -57,4 +57,10 @@ class FlatController extends Controller
 
         return redirect('/')->with('success', 'new flat created!! ');
     }
+
+    public function edit()
+    {
+
+        dd('edit route');
+    }
 }
