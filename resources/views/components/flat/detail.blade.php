@@ -55,5 +55,8 @@
     </div>
 
     {!! view('components.comment.index') !!}
+    {!! view('components.comment.index') !!}
+    {!! view('components.comment.index') !!}
+    {!! view('components.comment.index') !!}
 
 @endsection
