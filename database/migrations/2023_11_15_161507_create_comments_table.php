@@ -17,6 +17,9 @@ return new class extends Migration
             $table->unsignedBigInteger('flat_id');
             $table->text('body');
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('flat_id')->references('id')->on('flats')->onDelete('cascade');
         });
     }
 
