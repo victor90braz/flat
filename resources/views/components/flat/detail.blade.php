@@ -37,7 +37,9 @@
 
         <article class="mt-4 border p-4 rounded-lg">
             <div class="mb-4">
-                <p class="text-gray-600">${{ $flat->price }}/monthly</p>
+                <p class="h-full rounded-md border-0 bg-transparent py-0 pr-7 text-gray-600 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm">
+                    EUR {{ $flat->price }},00 / monthly
+                </p>
             </div>
 
             <div class="mb-4">
@@ -47,7 +49,7 @@
             </div>
 
             <div class="mb-4">
-                <p class="text-gray-700">{{ $flat->location }}</p>
+                <p class="text-gray-700">Location: {{ $flat->location }}</p>
             </div>
         </article>
 
