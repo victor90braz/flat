@@ -37,10 +37,6 @@
 
         <article class="mt-4 border p-4 rounded-lg">
             <div class="mb-4">
-                <p class="text-lg font-semibold">{{ ucwords($flat->title) }}</p>
-            </div>
-
-            <div class="mb-4">
                 <p class="text-gray-600">${{ $flat->price }}/monthly</p>
             </div>
 
