@@ -7,29 +7,32 @@
             <div class="flex-1 px-2 lg:flex-none">
                 <h1 class="text-2xl font-semibold">{{ ucwords($flat->title) }}</h1>
             </div>
-            <div class="flex justify-end flex-1 px-2">
-                <div class="flex items-stretch">
-                    <div class="dropdown dropdown-end">
-                        <label tabindex="0" class="btn btn-ghost rounded-btn">Settings</label>
-                        <ul tabindex="0" class="menu dropdown-content z-[1] p-2 shadow bg-base-200 rounded-box w-fit mt-4">
-                            <li class="mb-2">
-                                <a href="{{ url('flat/edit/' . $flat->id) }}"
-                                    class="px-4 py-2 border-2 border-yellow-500 rounded-lg text-yellow-500 hover:bg-yellow-500 hover:text-white">
-                                    Edit
-                                </a>
-                            </li>
-                            <li>
-                                <form action="{{ url('delete/' . $flat->id) }}" method="POST"
-                                    class="block px-4 py-2 border-2 border-red-500 rounded-lg text-red-500 hover:bg-red-500 hover:text-white">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit">Delete</button>
-                                </form>
-                            </li>
-                        </ul>
+
+            @auth
+                <div class="flex justify-end flex-1 px-2">
+                    <div class="flex items-stretch">
+                        <div class="dropdown dropdown-end">
+                            <label tabindex="0" class="btn btn-ghost rounded-btn">Settings</label>
+                            <ul tabindex="0" class="menu dropdown-content z-[1] p-2 shadow bg-base-200 rounded-box w-fit mt-4">
+                                <li class="mb-2">
+                                    <a href="{{ url('flat/edit/' . $flat->id) }}"
+                                        class="px-4 py-2 border-2 border-yellow-500 rounded-lg text-yellow-500 hover:bg-yellow-500 hover:text-white">
+                                        Edit
+                                    </a>
+                                </li>
+                                <li>
+                                    <form action="{{ url('delete/' . $flat->id) }}" method="POST"
+                                        class="block px-4 py-2 border-2 border-red-500 rounded-lg text-red-500 hover:bg-red-500 hover:text-white">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit">Delete</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
+            @endauth
         </header>
 
         <article class="mt-4 border p-4 rounded-lg">
