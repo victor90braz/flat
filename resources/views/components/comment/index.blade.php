@@ -1,7 +1,11 @@
-<div class="border p-4 ">
-    <div class="chat chat-start">
-        <div class="chat-bubble">It's over Anakin, <br/>I have the high ground.</div>
+<footer>
+    <div class="mt-4 border p-4 bg-blue-200">
+        <h2>Comments:</h2>
+        <div class="chat chat-start mb-2 mt-2">
+            <div class="chat-bubble">Amazing experience!!</div>
+        </div>
+        <div class="chat chat-start mb-2 mt-2">
+            <div class="chat-bubble">Amazing experience!!</div>
+        </div>
     </div>
-</div>
-
-
+</footer>
