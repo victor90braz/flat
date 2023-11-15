@@ -12,7 +12,7 @@ class CommentController extends Controller
      */
     public function index()
     {
-        dd('comment route');
+        return view('components.comment.index');
     }
 
     /**
