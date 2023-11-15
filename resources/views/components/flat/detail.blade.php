@@ -11,8 +11,8 @@
                 <div class="flex items-stretch">
                     <div class="dropdown dropdown-end">
                         <label tabindex="0" class="btn btn-ghost rounded-btn">Settings</label>
-                        <ul tabindex="0" class="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4">
-                            <li>
+                        <ul tabindex="0" class="menu dropdown-content z-[1] p-2 shadow bg-base-200 rounded-box w-fit mt-4">
+                            <li class="mb-2">
                                 <a href="{{ url('flat/edit/' . $flat->id) }}"
                                     class="px-4 py-2 border-2 border-yellow-500 rounded-lg text-yellow-500 hover:bg-yellow-500 hover:text-white">
                                     Edit
