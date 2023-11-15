@@ -20,7 +20,7 @@
                     </a>
                 </div>
                 @if(Auth::user())
-                    <div class="btm-nav">
+                    <div>
                         <a href="/flats" aria-current="page" class="flex flex-col items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21h18v-6H3zm0 0H21V9h-3.5M12 3L2 9v12h4v-6h8v6h4V9L12 3z"/>
@@ -29,7 +29,7 @@
                         </a>
                     </div>
 
-                    <div class="btm-nav">
+                    <div>
                         <a href="/flat/create" aria-current="page" class="flex flex-col items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
