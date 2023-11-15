@@ -1,5 +1,5 @@
 <nav class="mx-auto max-w-7xl p-2">
-    <div class="relative flex h-16 items-center justify-between ml-2 mr-2">
+    <div class="relative flex h-16 items-center justify-between ml-4 mr-4">
         <div class="flex flex-shrink-0 items-center">
             <a href="/">
                 <img class="h-12 w-auto" src="{{ asset('storage/images/favicon.png') }}" alt="Logo Company">
@@ -11,7 +11,7 @@
 
         <div class="hidden sm:block ml-6">
             <div class="flex space-x-4 items-center">
-                <div class="btm-nav">
+                <div>
                     <a href="/" aria-current="page" class="flex flex-col items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
