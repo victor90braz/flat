@@ -12,7 +12,13 @@ class CommentController extends Controller
      */
     public function index()
     {
-        return view('components.comment.index');
+        $comments = Comment::all();
+
+        dd($comments);
+
+        return view('components.comment.index', [
+            'comments' => $comments
+        ]);
     }
 
     /**
