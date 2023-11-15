@@ -14,18 +14,6 @@
             <span class="text-gray-500">Updated {{ now()->diffForHumans($flat->updated_at) }}</span>
         </div>
     </div>
-
-    <div class="flex flex-row justify-center gap-2 mt-4">
-        <form action="delete/{{$flat->id}}" method="POST">
-            @csrf
-            @method('DELETE')
-
-            <button type="submit" class="bg-red-500 p-2 rounded-md">DELETE</button>
-        </form>
-
-        <a href="flat/edit/{{$flat->id}}" class="bg-green-500 p-2 rounded-md">Edit</a>
-    </div>
-
 </div>
 
 
