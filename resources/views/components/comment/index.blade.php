@@ -61,7 +61,6 @@
                         }, 2000);
                     </script>
                 @endif
-
             </article>
         </div>
     @endforeach
