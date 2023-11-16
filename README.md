@@ -1,4 +1,8 @@
-# Flat - PHP (Laravel), MySQL, and Tailwind CSS Project
+# Flat
+
+## Technologies:
+
+PHP (Laravel), MySQL, and Tailwind CSS Project
 
 ## Project Overview
 
