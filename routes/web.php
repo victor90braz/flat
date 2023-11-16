@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\CommentController;
+use App\Http\Controllers\FlatCommentsController;
 use App\Http\Controllers\FlatController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
@@ -24,4 +24,5 @@ Route::post('login', [LoginController::class, 'store']);
 
 Route::get('logout', [LogoutController::class, 'destroy']);
 
-Route::get('comment', [CommentController::class, 'index']);
+Route::post('/flat/{flat:id}/comments/', [FlatCommentsController::class, 'store']);
+

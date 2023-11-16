@@ -9,6 +9,8 @@ class Comment extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
+
     public function flat()
     {
         return $this->belongsTo(Flat::class);
