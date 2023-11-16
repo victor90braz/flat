@@ -21,8 +21,8 @@
     @endauth
 
     @foreach ($comments->reverse() as $comment)
-        <div class="mt-4 border p-4 bg-blue-200 m-4 rounded-md">
-            <article class="flex">
+        <div class="mt-4 border p-4 bg-blue-200 m-4 rounded-md relative">
+            <article class="flex items-center">
                 <div class="flex flex-col mr-4" style="display: flex; flex-direction: column; align-items: center;">
                     <img src="https://i.pravatar.cc/100?img={{ $comment->user->id }}" alt="avatar" class="rounded-full">
 
@@ -32,19 +32,23 @@
                     </header>
                 </div>
 
-                <div class="chat chat-start mb-2 mt-2">
-                    <div class="chat-bubble mt-4">{{ $comment->body }}</div>
+                <div class="flex-grow">
+                    <div class="chat chat-start mb-2 mt-2">
+                        <div class="chat-bubble mt-4">{{ $comment->body }}</div>
+                    </div>
                 </div>
 
-                <form action="/flat/{{ $comment->id }}/comments" method="POST">
-                    @csrf
-                    @method('DELETE')
+                <div class="absolute top-0 right-0 delete-button">
+                    <form action="/flat/{{ $comment->id }}/comments" method="POST">
+                        @csrf
+                        @method('DELETE')
 
-                    <button type="submit" class="bg-red-600 text-white p-2">DELETE</button>
-                </form>
+                        <button type="submit" class=" text-black m-4 p-2 transition duration-300 hover:bg-red-700">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </form>
+                </div>
             </article>
         </div>
-
-
     @endforeach
 </footer>
