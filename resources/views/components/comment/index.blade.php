@@ -38,7 +38,7 @@
                     </div>
                 </div>
 
-                @if (auth()->id() === $comment->user->id)
+                @if (auth()->check() && auth()->id() === $comment->user->id)
                     <div class="absolute top-0 right-0 delete-button">
                         <form action="/flat/{{ $comment->id }}/comments" method="POST">
                             @csrf
