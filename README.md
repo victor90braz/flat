@@ -1,4 +1,10 @@
-# Flat - Laravel, MySQL, and Tailwind CSS Project
+# Flat - PHP (Laravel), MySQL, and Tailwind CSS Project
+
+## Project Overview
+
+"Flat" is a web application built with PHP (Laravel), MySQL, and Tailwind CSS. It aims to create a simple page application with CRUD functionality, including user login and registration.
+
+Enjoy building and exploring with "Flat"!
 
 ## Getting Started
 
@@ -25,9 +31,3 @@
         ```
 
     Access your project at `http://127.0.0.1:8000` in your browser.
-
-## Project Overview
-
-"Flat" is a web application built with Laravel, MySQL, and Tailwind CSS. It aims to create a simple page application with CRUD functionality, including user login and registration.
-
-Enjoy building and exploring with "Flat"!
