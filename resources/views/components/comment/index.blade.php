@@ -38,18 +38,19 @@
                     </div>
                 </div>
 
-                @can('delete', $comment)
+                @if (auth()->id() === $comment->user->id)
                     <div class="absolute top-0 right-0 delete-button">
                         <form action="/flat/{{ $comment->id }}/comments" method="POST">
                             @csrf
                             @method('DELETE')
 
-                            <button type="submit" class="text-black m-4 p-2 transition duration-300 hover:bg-red-700">
+                            <button type="submit" class=" text-black m-4 p-2 transition duration-300 hover:bg-red-700">
                                 <i class="fas fa-times"></i>
                             </button>
                         </form>
                     </div>
-                @endcan
+                @endif
+
             </article>
         </div>
     @endforeach
