@@ -4,7 +4,6 @@
             @csrf
 
             <header class="flex flex-col items-center gap-4 p-4 bg-gray-100 rounded-xl shadow-md transition duration-300 hover:shadow-lg">
-
                 <div class="flex items-center gap-2">
                     <img src="https://i.pravatar.cc/100?img={{ auth()->id() }}" alt="avatar" class="rounded-full">
                     <h3 class="text-xl font-bold">Wants to let a Review?</h3>
@@ -15,26 +14,24 @@
 
                     <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300 focus:outline-none focus:shadow-outline-blue" type="submit">Post</button>
                 </div>
-
             </header>
         </form>
     @endauth
 
     @foreach ($comments->reverse() as $comment)
-        <div class="mt-4 border p-4 bg-blue-200 m-4 rounded-md relative">
+        <div class="m-4 border p-2 bg-blue-200 rounded-md relative">
             <article class="flex items-center">
-                <div class="flex flex-col mr-4" style="display: flex; flex-direction: column; align-items: center;">
-                    <img src="https://i.pravatar.cc/100?img={{ $comment->user->id }}" alt="avatar" class="rounded-full">
-
-                    <header class="flex flex-col items-center">
+                <div class="flex flex-col items-center mr-4">
+                    <img src="https://i.pravatar.cc/100?img={{ $comment->user->id }}" alt="avatar" class="rounded-full w-10 h-10">
+                    <header class="flex flex-col items-center text-xs">
                         <h3 class="font-bold">{{ $comment->user->name }}</h3>
-                        <p class="text-xs"><time> {{ $comment->created_at->diffForHumans() }}</time></p>
+                        <p><time>{{ $comment->created_at->diffForHumans() }}</time></p>
                     </header>
                 </div>
 
                 <div class="flex-grow">
-                    <div class="chat chat-start mb-2 mt-2">
-                        <div class="chat-bubble mt-4">{{ $comment->body }}</div>
+                    <div class="chat chat-start">
+                        <div class="chat-bubble">{{ $comment->body }}</div>
                     </div>
                 </div>
 
@@ -44,7 +41,7 @@
                             @csrf
                             @method('DELETE')
 
-                            <button type="submit" class=" text-black m-4 p-2 transition duration-300 hover:bg-red-700">
+                            <button type="submit" class="text-black m-4 p-2 transition duration-300 hover:bg-red-700">
                                 <i class="fas fa-times"></i>
                             </button>
                         </form>
