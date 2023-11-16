@@ -25,4 +25,5 @@ Route::post('login', [LoginController::class, 'store']);
 Route::get('logout', [LogoutController::class, 'destroy']);
 
 Route::post('/flat/{flat:id}/comments/', [FlatCommentsController::class, 'store']);
+Route::delete('/flat/{comment:id}/comments/', [FlatCommentsController::class, 'destroy']);
 

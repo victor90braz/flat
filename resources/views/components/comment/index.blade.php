@@ -35,7 +35,16 @@
                 <div class="chat chat-start mb-2 mt-2">
                     <div class="chat-bubble mt-4">{{ $comment->body }}</div>
                 </div>
+
+                <form action="/flat/{{ $comment->id }}/comments" method="POST">
+                    @csrf
+                    @method('DELETE')
+
+                    <button type="submit" class="bg-red-600 text-white p-2">DELETE</button>
+                </form>
             </article>
         </div>
+
+
     @endforeach
 </footer>

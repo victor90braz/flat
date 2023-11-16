@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Comment;
 use App\Models\Flat;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -21,4 +22,13 @@ class FlatCommentsController extends Controller
 
         return back();
     }
+
+    public function destroy($commentId)
+    {
+
+        Comment::find($commentId)->delete();
+
+        return redirect('/')->with('success', 'Deleted successfully');
+    }
+
 }
