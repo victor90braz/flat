@@ -1,6 +1,6 @@
 <footer>
     @auth
-        <form action="/flat/{{ auth()->id()  }}/comments/" method="POST" class="bg-white border border-gray-200 p-6 rounded-xl m-4">
+        <form action="/flat/{{ $flat->id }}/comments/" method="POST" class="bg-white border border-gray-200 p-6 rounded-xl m-4">
             @csrf
 
             <header class="flex flex-col items-center gap-4 p-4 bg-gray-100 rounded-xl shadow-md transition duration-300 hover:shadow-lg">
@@ -20,11 +20,11 @@
         </form>
     @endauth
 
-    @foreach ($comments as $comment)
+    @foreach ($comments->reverse() as $comment)
         <div class="mt-4 border p-4 bg-blue-200 m-4 rounded-md">
             <article class="flex">
                 <div class="flex flex-col mr-4" style="display: flex; flex-direction: column; align-items: center;">
-                    <img src="https://i.pravatar.cc/100?img={{$comment->user->id}}" alt="avatar" class="rounded-full">
+                    <img src="https://i.pravatar.cc/100?img={{ $comment->user->id }}" alt="avatar" class="rounded-full">
 
                     <header class="flex flex-col items-center">
                         <h3 class="font-bold">{{ $comment->user->name }}</h3>
