@@ -28,7 +28,7 @@ class FlatCommentsController extends Controller
 
         Comment::find($commentId)->delete();
 
-        return redirect('/')->with('success', 'Deleted successfully');
+        return back()->with('success', 'Deleted successfully');
     }
 
 }
