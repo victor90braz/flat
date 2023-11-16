@@ -2,82 +2,73 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreFlatRequest;
 use App\Models\Flat;
-use Illuminate\Support\Facades\Auth;
+use App\Models\User;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class FlatController extends Controller
 {
-    public function index() {
-
-        return view('pages.layout', [
-            'flats' => Flat::latest()->simplePaginate(6)->withQueryString()
+    public function index(): View
+    {
+        return view('pages.flats.index', [
+            'flats' => Flat::latest()->simplePaginate(6)
         ]);
     }
 
-    public function allFlats() {
+    public function userFlats(Request $request): View
+    {
+        /** @var User $user */
+        $user = $request->user();
 
-        return view('pages.flat', [
-            'flats' => Flat::all()
+        $flats = $user->flats()->simplePaginate(6);
+
+        return view('pages.flats.userFlats', [
+            'flats' => $flats,
         ]);
     }
 
-    public function detailPage($id) {
-        $flat = Flat::find($id);
-
+    public function view(Flat $flat): View
+    {
         $comments = $flat->comments;
 
-        return view('components/flat/detail', compact('flat', 'comments'));
+        return view('pages.flats.detail', compact('flat', 'comments'));
     }
 
-    public function delete($id) {
-
-        Flat::find($id)->delete();
+    public function delete(Flat $flat): RedirectResponse
+    {
+        $flat->delete();
 
         return redirect('/')->with('success', 'The item was successfully deleted.');
     }
 
-    public function create()
+    public function create(): View
     {
-        //dd("page created");
-
-        return view('components.flat.create');
+        return view('pages.flats.create');
     }
 
-    public function store()
+    public function store(StoreFlatRequest $request): RedirectResponse
     {
+        $attributes = $request->validated();
+        $attributes['user_id'] = $request->user()->id;
 
-        $attributes = request()->validate([
-            'title' => ['required'],
-            'price' => ['required'],
-            'description' => ['required'],
-            'location' => ['required']
-        ]);
-
-        $attributes['user_id'] = Auth::id();
         Flat::create($attributes);
 
-        return redirect('/')->with('success', 'new flat created!! ');
+        return redirect('/')->with('success', 'New flat created');
     }
 
-    public function edit($id)
+    public function edit(Flat $flat): View
     {
-        return view('components.flat.edit', [
-            'flat' => Flat::find($id)
+        return view('pages.flats.edit', [
+            'flat' => $flat,
         ]);
     }
 
-    public function update($id)
+    public function update(Flat $flat, StoreFlatRequest $request): RedirectResponse
     {
-        $flat = Flat::find($id);
-
-        $attributes = request()->validate([
-            'title' => ['required'],
-            'price' => ['required'],
-            'description' => ['required'],
-            'location' => ['required']
-        ]);
-
-        $flat->update($attributes);
+        $flat->update($request->validated());
 
         return redirect('/')->with('success', 'Flat updated successfully!');
     }

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 class LoginController extends Controller
 {
     public function create() {
-        return view('components.login.index');
+        return view('pages.login.index');
     }
 
     public function store() {

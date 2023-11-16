@@ -1,0 +1,153 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: ${DOCKER_APP_NAME}/app
+    container_name: ${DOCKER_APP_NAME}-app
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    ports:
+      - '${DOCKER_APP_PORT:-8091}:80'
+    env_file:
+      - .env
+    environment:
+      CONTAINER_ROLE: app
+    volumes:
+      - '.:/var/www/html'
+    networks:
+      - backend
+    depends_on:
+      - mysql
+#      - redis
+
+#  scheduler:
+#    image: ${DOCKER_APP_NAME}/app
+#    container_name: ${DOCKER_APP_NAME}-scheduler
+#    networks:
+#      - backend
+#    extra_hosts:
+#      - 'host.docker.internal:host-gateway'
+#    depends_on:
+#      - app
+#      - mysql
+##      - redis
+#    env_file:
+#      - .env
+#    environment:
+#      CONTAINER_ROLE: scheduler
+#    volumes:
+#      - .:/var/www/html
+
+#  queue:
+#    image: ${DOCKER_APP_NAME}/app
+#    container_name: ${DOCKER_APP_NAME}-queue
+#    networks:
+#      - backend
+#    extra_hosts:
+#      - 'host.docker.internal:host-gateway'
+#    depends_on:
+#      - app
+#      - mysql
+##      - redis
+#    env_file:
+#      - .env
+#    environment:
+#      CONTAINER_ROLE: queue
+#    volumes:
+#      - .:/var/www/html
+
+  mysql:
+    image: mysql:5.7
+    container_name: ${DOCKER_APP_NAME}-mysql
+    ports:
+      - '${DOCKER_MYSQL_PORT:-3316}:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+      MYSQL_DATABASE: '${DB_DATABASE}'
+      MYSQL_USER: '${DB_USERNAME}'
+      MYSQL_PASSWORD: '${DB_PASSWORD}'
+    volumes:
+      - 'app-mysql:/var/lib/mysql'
+    networks:
+      - backend
+
+#  redis:
+#    image: redis:5.0-alpine
+#    container_name: ${DOCKER_APP_NAME}-redis
+#    ports:
+#      - '${DOCKER_REDIS_PORT:-6389}:6379'
+#    volumes:
+#      - 'app-redis:/data'
+#    networks:
+#      - backend
+
+  npm:
+    user: ${CURRENT_UID:-0}
+    image: node:16-alpine
+    container_name: ${DOCKER_APP_NAME}-npm
+    volumes:
+      - .:/var/www/html
+    working_dir: /var/www/html
+    ports:
+      - '8080:8080'
+    entrypoint: [ 'npm' ]
+    profiles: [ 'tools' ]
+    networks:
+      - backend
+
+  composer:
+    environment:
+      - COMPOSER_HOME=.cache
+      - SSH_AUTH_SOCK=/ssh-auth.sock
+    user: ${CURRENT_UID:-0}
+    image: ${DOCKER_APP_NAME}/app
+    container_name: ${DOCKER_APP_NAME}-composer
+    volumes:
+      - .:/var/www/html
+      - $SSH_AUTH_SOCK:/ssh-auth.sock
+      - /etc/passwd:/etc/passwd:ro
+      - /etc/group:/etc/group:ro
+    working_dir: /var/www/html
+    entrypoint: ['composer']
+    profiles: [ 'tools' ]
+    networks:
+      - backend
+
+  php:
+    user: ${CURRENT_UID:-0}
+    environment:
+      - XDG_CONFIG_HOME=.config
+    image: ${DOCKER_APP_NAME}/app
+    container_name: ${DOCKER_APP_NAME}-php
+    volumes:
+      - .:/var/www/html
+    working_dir: /var/www/html
+    entrypoint: [ 'php' ]
+    profiles: [ 'tools' ]
+    networks:
+      - backend
+
+  artisan:
+    user: ${CURRENT_UID:-0}
+    environment:
+      - XDG_CONFIG_HOME=.config
+    image: ${DOCKER_APP_NAME}/app
+    container_name: ${DOCKER_APP_NAME}-artisan
+    volumes:
+      - .:/var/www/html
+    working_dir: /var/www/html
+    entrypoint: [ 'php', 'artisan' ]
+    profiles: [ 'tools' ]
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
+volumes:
+  app-mysql:
+    driver: local
+  app-redis:
+    driver: local
