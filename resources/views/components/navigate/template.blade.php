@@ -2,10 +2,10 @@
     <div class="relative flex h-16 items-center justify-between ml-4 mr-4">
         <div class="flex flex-shrink-0 items-center">
             <a href="/">
-                <img class="h-12 w-auto" src="{{ asset('storage/images/favicon.png') }}" alt="Logo Company">
+                <img class="h-12 w-auto" src="https://seeklogo.com/images/R/risingwave-icon-logo-837E37238C-seeklogo.com.png" alt="Logo Company">
             </a>
             @if(Auth::user())
-                <p>Welcome, {{ ucfirst(Auth::user()->name) }}</p>
+                <p class="ml-2">Welcome, {{ ucfirst(Auth::user()->name) }}</p>
             @endif
         </div>
 
