@@ -22,10 +22,11 @@ class FlatController extends Controller
     }
 
     public function detailPage($id) {
+        $flat = Flat::find($id);
 
-        return view('components/flat/detail', [
-            'flat' => Flat::find($id)
-        ]);
+        $comments = $flat->comments;
+
+        return view('components/flat/detail', compact('flat', 'comments'));
     }
 
     public function delete($id) {
