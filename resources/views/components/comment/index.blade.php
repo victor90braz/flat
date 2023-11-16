@@ -38,16 +38,18 @@
                     </div>
                 </div>
 
-                <div class="absolute top-0 right-0 delete-button">
-                    <form action="/flat/{{ $comment->id }}/comments" method="POST">
-                        @csrf
-                        @method('DELETE')
+                @can('delete', $comment)
+                    <div class="absolute top-0 right-0 delete-button">
+                        <form action="/flat/{{ $comment->id }}/comments" method="POST">
+                            @csrf
+                            @method('DELETE')
 
-                        <button type="submit" class=" text-black m-4 p-2 transition duration-300 hover:bg-red-700">
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </form>
-                </div>
+                            <button type="submit" class="text-black m-4 p-2 transition duration-300 hover:bg-red-700">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </form>
+                    </div>
+                @endcan
             </article>
         </div>
     @endforeach
