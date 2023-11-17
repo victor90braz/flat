@@ -15,7 +15,7 @@
                             <label tabindex="0" class="btn btn-ghost rounded-btn">Settings</label>
                             <ul tabindex="0" class="menu dropdown-content z-[1] p-2 shadow bg-base-200 rounded-box w-fit mt-4">
                                 <li class="mb-2">
-                                    <a href="/flats/edit/{{ $flat->id }}"
+                                    <a href="{{ route('flats.edit', ['flat' => $flat->id]) }}"
                                         class="px-4 py-2 border-2 border-yellow-500 rounded-lg text-yellow-500 hover:bg-yellow-500 hover:text-white">
                                         Edit
                                     </a>
