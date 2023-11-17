@@ -38,12 +38,20 @@
                         Sign in
                     </button>
                 </div>
+
+                <div class="sm:mx-auto sm:w-full sm:max-w-sm mt-2">
+                    @error('email')
+                        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                    @enderror
+                </div>
             </form>
 
-            <p class="mt-10 text-center text-sm text-gray-500">
+            <p class="mt-8 text-center text-sm text-gray-500">
                 Not a member?
                 <a href="register" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Register</a>
             </p>
         </div>
     </div>
+
+
 @endsection

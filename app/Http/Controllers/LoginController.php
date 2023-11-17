@@ -16,7 +16,7 @@ class LoginController extends Controller
 
         if (!auth()->attempt($credentials)) {
             return back()->withErrors([
-                'email' => 'Your provided credentials could not be verified.',
+                'email' => 'Invalid login credentials. Please try again.',
             ]);
         }
 
