@@ -54,6 +54,6 @@
         </article>
     </div>
 
-    {!! view('components.comment.index', ['comments' => $flat->comments, 'flat' => $flat]) !!}
+    {!! view('components.comments.card', ['comments' => $flat->comments, 'flat' => $flat]) !!}
 
 @endsection
