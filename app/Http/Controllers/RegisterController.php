@@ -8,7 +8,7 @@ use Exception; // Import the Exception class
 class RegisterController extends Controller
 {
     public function create() {
-        return view("components.register.create");
+        return view("pages.register.create");
     }
 
     public function store()
