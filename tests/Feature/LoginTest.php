@@ -36,7 +36,7 @@ class LoginTest extends TestCase
     public function a_user_cannot_login_with_invalid_credentials()
     {
         // Attempt to login with invalid credentials
-        $response = $this->post('/login', [
+        $this->post('/login', [
             'email' => 'nonexistent@example.com',
             'password' => 'invalidpassword',
         ]);
