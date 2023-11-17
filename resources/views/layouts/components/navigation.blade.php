@@ -7,7 +7,7 @@
                      alt="Logo Company">
             </a>
             @if(Auth::user())
-                <p class="ml-2">Welcome, {{ ucfirst(Auth::user()->fullName) }}</p>
+                <p class="ml-2">Welcome, {{ ucfirst(Auth::user()->name) }}</p>
             @endif
         </div>
 
