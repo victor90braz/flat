@@ -19,7 +19,6 @@ class RegisterTest extends TestCase
             'password' => 'password123',
         ]);
 
-        // Assert that the registration was successful and the user was created
         $response->assertRedirect('/login');
         $this->assertDatabaseHas('users', ['email' => 'test@example.com']);
 
