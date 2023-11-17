@@ -1,8 +1,7 @@
 <footer>
     @auth
-        <form action="/flat/{{ $flat->id }}/comments/" method="POST" class="bg-white border border-gray-200 p-6 rounded-xl m-4">
+        <form action="{{ route('flats.comments.store', ['flat' => $flat->id]) }}" method="POST" class="bg-white border border-gray-200 p-6 rounded-xl m-4">
             @csrf
-
             <header class="flex flex-col items-center gap-4 p-4 bg-gray-100 rounded-xl shadow-md transition duration-300 hover:shadow-lg">
                 <div class="flex items-center gap-2">
                     <img src="https://i.pravatar.cc/100?img={{ auth()->id() }}" alt="avatar" class="rounded-full">
