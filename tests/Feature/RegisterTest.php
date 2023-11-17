@@ -21,7 +21,5 @@ class RegisterTest extends TestCase
 
         $response->assertRedirect('/login');
         $this->assertDatabaseHas('users', ['email' => 'test@example.com']);
-
     }
-
 }
