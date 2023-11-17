@@ -9,7 +9,6 @@ class LoginController extends Controller
     }
 
     public function store() {
-
         $credentials = request()->validate([
             'email' => ['required', 'email'],
             'password' => ['required'],
@@ -21,8 +20,13 @@ class LoginController extends Controller
             ]);
         }
 
-        session()->regenerate();
+        if (auth()->user()) {
+            // User is authenticated, redirect to the appropriate route
+            return redirect('/')->with("success", "Welcome Back!");
+        }
 
         return redirect("/")->with("success", "Welcome Back!");
     }
+
+
 }
