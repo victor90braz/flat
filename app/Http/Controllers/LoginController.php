@@ -20,13 +20,6 @@ class LoginController extends Controller
             ]);
         }
 
-        if (auth()->user()) {
-            // User is authenticated, redirect to the appropriate route
-            return redirect('/')->with("success", "Welcome Back!");
-        }
-
         return redirect("/")->with("success", "Welcome Back!");
     }
-
-
 }
