@@ -24,11 +24,12 @@ class FlatCommentController extends Controller
         return back();
     }
 
-    public function delete(Comment $comment): RedirectResponse
+    public function delete(Flat $flat, Comment $comment): RedirectResponse
     {
         $comment->delete();
 
         return back()->with('success', 'Deleted successfully');
     }
+
 
 }
