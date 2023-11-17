@@ -21,7 +21,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <form action="{{ url('delete/' . $flat->id) }}" method="POST"
+                                    <form action="{{ route('flats.delete', ['flat' => $flat->id ]) }}" method="POST"
                                         class="block px-4 py-2 border-2 border-red-500 rounded-lg text-red-500 hover:bg-red-500 hover:text-white">
                                         @csrf
                                         @method('DELETE')
