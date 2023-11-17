@@ -9,7 +9,7 @@
     </div>
 
     <div class="sm:mx-auto sm:w-full sm:max-w-md">
-        <form class="space-y-6" action="/flat/update/{{ $flat->id }}" method="POST">
+        <form class="space-y-6" action="{{ route('flats.update', ['flat' => $flat->id]) }}" method="POST">
             @csrf
             @method('PATCH')
 
