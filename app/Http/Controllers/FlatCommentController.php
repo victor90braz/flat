@@ -6,7 +6,6 @@ use App\Models\Comment;
 use App\Models\Flat;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
 class FlatCommentController extends Controller
 {
