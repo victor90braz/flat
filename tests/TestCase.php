@@ -11,13 +11,10 @@ abstract class TestCase extends BaseTestCase
 
     public function it_can_add_two_numbers()
     {
-        // Arrange
         $calculator = new Calculator();
 
-        // Act
         $result = $calculator->add(5, 10);
 
-        // Assert
         $this->assertEquals(15, $result);
     }
 }
