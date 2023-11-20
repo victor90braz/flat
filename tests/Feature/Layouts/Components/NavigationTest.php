@@ -14,12 +14,12 @@ class NavigationTest extends TestCase
     public function it_displays_navigation_elements()
     {
         // Act
-        $response = $this->get('/'); // Adjust the URL based on your application's routes
+        $response = $this->get('/');
 
         // Assert
         $response->assertSee('Home');
-        $response->assertSee('Welcome'); // Adjust based on your actual welcome message
-        $response->assertDontSee('My Flats'); // Navigation elements for authenticated users
+        $response->assertSee('Welcome');
+        $response->assertDontSee('My Flats');
         $response->assertDontSee('New Flat');
         $response->assertDontSee('Logout');
     }
@@ -31,7 +31,7 @@ class NavigationTest extends TestCase
         $user = User::factory()->create();
 
         // Act
-        $response = $this->actingAs($user)->get('/'); // Adjust the URL based on your application's routes
+        $response = $this->actingAs($user)->get('/');
 
         // Assert
         $response->assertSee('Home');
