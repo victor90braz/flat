@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Views\Components\Comments;
+namespace Tests\Feature\Views\Components\Comments;
 
 use Tests\TestCase;
 
