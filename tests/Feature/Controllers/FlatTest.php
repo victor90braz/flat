@@ -7,7 +7,7 @@ use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 use App\Models\Flat;
 
-class FlatControllerTest extends TestCase
+class FlatTest extends TestCase
 {
     use RefreshDatabase, WithFaker;
 
