@@ -40,9 +40,17 @@ Enjoy building and exploring with "Flat"!
 
 In this project, you can store your images in the `public/images` directory. To access these images in your application, you can use the following URLs:
 
--   ![Flat Tests Image](/public/storage/images/flat-tests.png) # Image of Flat Tests
--   ![Home Image](/public/storage/images/home.png) # Image of Home
--   ![Login Image](/public/storage/images/login.png) # Image of Login
+# Image of Flat Tests
+
+![Flat Tests Image](/public/storage/images/flat-tests.png)
+
+# Image of Main Page
+
+![Home Image](/public/storage/images/home.png)
+
+# Image of Login
+
+![Login Image](/public/storage/images/login.png)
 
 Replace `{flat-tests.png}`, `{home.png}`, and `{login.png}` with the actual names of your image files.
 
