@@ -25,7 +25,7 @@ class RoutesTest extends TestCase
     /** @test */
     public function it_routes_to_flat_store_action()
     {
-        $user = User::factory()->create(); // Creating a user for authentication (if needed)
+        $user = User::factory()->create();
 
         $data = [
             'title' => 'Sample Flat',
@@ -34,13 +34,11 @@ class RoutesTest extends TestCase
             'location' => 'Sample Location',
         ];
 
-        $response = $this->actingAs($user) // Assuming you want to act as an authenticated user
+        $response = $this->actingAs($user)
                         ->post(route('flats.store'), $data);
 
-        // Check if the response is a redirect (status code 302)
         $response->assertStatus(302);
 
-        // Optionally, you can assert that the flat was created in the database
         $this->assertDatabaseHas('flats', [
             'title' => 'Sample Flat',
             'price' => 1000,
@@ -49,7 +47,6 @@ class RoutesTest extends TestCase
             'user_id' => $user->id,
         ]);
 
-        // Optionally, you can assert that the session has a success message
         $response->assertSessionHas('success', 'New flat created');
     }
 
