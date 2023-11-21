@@ -19,7 +19,7 @@ Route::patch('/flats/update/{flat}', [FlatController::class, 'update'])->name('f
 Route::post('/flats/{flat}/comments', [FlatCommentController::class, 'store'])->name('flats.comments.store');
 Route::delete('/flats/{flat}/comments/{comment}', [FlatCommentController::class, 'delete'])->name('flats.comments.delete');
 
-Route::get('register', [RegisterController::class, 'create']);
+Route::get('register', [RegisterController::class, 'create'])->name('register.create');
 Route::post('register', [RegisterController::class, 'store']);
 
 Route::get('login', [LoginController::class, 'create']);

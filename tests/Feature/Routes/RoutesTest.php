@@ -179,4 +179,14 @@ class RoutesTest extends TestCase
         $response->headers->get('Location');
     }
 
+    /** @test */
+    public function it_routes_to_register_create_page()
+    {
+        $response = $this->get(route('register.create'));
+
+        $response->assertStatus(200)
+                ->assertViewIs('pages.register.create');
+    }
+
+
 }
