@@ -65,4 +65,19 @@ class RoutesTest extends TestCase
 
         $response->assertViewHas('flats');
     }
+
+    /** @test */
+    public function it_routes_to_flat_view_action()
+    {
+        $flat = Flat::factory()->create();
+
+        $response = $this->get(route('flats.view', ['flat' => $flat]));
+
+        $response->assertStatus(200);
+
+        $response->assertViewIs('pages.flats.detail');
+
+        $response->assertViewHas('flat', $flat);
+        $response->assertViewHas('comments', $flat->comments);
+    }
 }
