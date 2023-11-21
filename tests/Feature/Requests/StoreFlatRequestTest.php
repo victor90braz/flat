@@ -39,7 +39,7 @@ class StoreFlatRequestTest extends TestCase
         $response = $this->post(route('flats.store'), $data);
 
         $response->assertSessionHasErrors(['title', 'price', 'description', 'location']);
-        $response->assertStatus(302); // Assuming a redirect after failed validation
+        $response->assertStatus(302);
     }
 
     /** @test */
