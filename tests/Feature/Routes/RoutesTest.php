@@ -108,4 +108,32 @@ class RoutesTest extends TestCase
 
         $response->assertViewHas('flat', $flat);
     }
+
+
+    /** @test */
+    public function it_routes_to_flat_update_action()
+    {
+        $flat = Flat::factory()->create();
+
+        $data = [
+            'title' => 'Updated Flat Title',
+            'price' => 1500,
+            'description' => 'Updated flat description.',
+            'location' => 'Updated Location',
+        ];
+
+        $response = $this->patch(route('flats.update', ['flat' => $flat]), $data);
+
+        $response->assertStatus(302);
+
+        $this->assertDatabaseHas('flats', [
+            'id' => $flat->id,
+            'title' => 'Updated Flat Title',
+            'price' => 1500,
+            'description' => 'Updated flat description.',
+            'location' => 'Updated Location',
+        ]);
+
+        $response->assertSessionHas('success', 'Flat updated successfully!');
+    }
 }
