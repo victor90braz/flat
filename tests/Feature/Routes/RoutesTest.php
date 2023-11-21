@@ -188,5 +188,22 @@ class RoutesTest extends TestCase
                 ->assertViewIs('pages.register.create');
     }
 
+    /** @test */
+    public function it_routes_to_register_store_action()
+    {
+        $data = [
+            'name' => 'John Doe',
+            'email' => 'john@example.com',
+            'password' => 'password123',
+        ];
+
+        $response = $this->post(route('register.store'), $data);
+
+        $response->assertStatus(302)
+                ->assertRedirect('/login')
+                ->assertSessionHas('success', 'Registration successful!');
+    }
+
+
 
 }
