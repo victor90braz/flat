@@ -28,5 +28,10 @@ class DetailTest extends TestCase
         $response->assertSee('month');
         $response->assertSee($flat->description);
         $response->assertSee('Location: ' . $flat->location);
+
+        $response->assertSee('Settings');
+        $response->assertSee('Edit');
+        $response->assertSee('Delete');
+
     }
 }
