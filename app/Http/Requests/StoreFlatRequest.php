@@ -15,7 +15,7 @@ class StoreFlatRequest extends FormRequest
     {
         return [
             'title' => ['required', 'max:191'],
-            'price' => ['required', 'numeric'], // 10, 10.50
+            'price' => ['required', 'numeric'],
             'description' => ['required'],
             'location' => ['required', 'max:191']
         ];

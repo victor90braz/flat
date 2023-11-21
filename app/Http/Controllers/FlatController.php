@@ -54,10 +54,16 @@ class FlatController extends Controller
         $attributes = $request->validated();
         $attributes['user_id'] = $request->user()->id;
 
-        Flat::create($attributes);
+        $flat = Flat::create($attributes);
 
-        return redirect('/')->with('success', 'New flat created');
+        if ($flat) {
+            return redirect('/')->with('success', 'New flat created');
+        } else {
+            // Log the error or handle it accordingly
+            return redirect('/')->with('error', 'Failed to create a new flat');
+        }
     }
+
 
     public function edit(Flat $flat): View
     {
