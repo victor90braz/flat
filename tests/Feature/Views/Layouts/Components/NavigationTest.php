@@ -11,33 +11,29 @@ class NavigationTest extends TestCase
     use RefreshDatabase;
 
     /** @test */
-    public function it_displays_navigation_elements()
+    public function it_displays_navigation_elements_for_authenticated_user()
     {
-        // Act
+        $user = User::factory()->create();
+        $this->actingAs($user);
+
         $response = $this->get('/');
 
-        // Assert
-        $response->assertSee('Home');
-        $response->assertSee('Welcome');
-        $response->assertDontSee('My Flats');
-        $response->assertDontSee('New Flat');
-        $response->assertDontSee('Logout');
+        $response->assertSuccessful();
+        $response->assertSee('Welcome, ' . ucfirst($user->name));
+        $response->assertSee(route('flats.user'));
+        $response->assertSee(route('flats.create'));
+        $response->assertSee(route('logout'));
     }
 
     /** @test */
-    public function it_displays_navigation_elements_for_authenticated_user()
+    public function it_displays_navigation_elements_for_guest_user()
     {
-        // Arrange
-        $user = User::factory()->create();
+        $response = $this->get('/');
 
-        // Act
-        $response = $this->actingAs($user)->get('/');
-
-        // Assert
-        $response->assertSee('Home');
-        $response->assertSee('Welcome, ' . ucfirst($user->name));
-        $response->assertSee('My Flats');
-        $response->assertSee('New Flat');
-        $response->assertSee('Logout');
+        $response->assertSuccessful();
+        $response->assertDontSee('Welcome, ');
+        $response->assertDontSee(route('flats.user'));
+        $response->assertDontSee(route('flats.create'));
+        $response->assertDontSee(route('logout'));
     }
 }
