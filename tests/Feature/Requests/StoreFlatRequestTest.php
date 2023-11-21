@@ -2,7 +2,6 @@
 
 namespace Tests\Feature\Requests\StoreFlatRequest;
 
-use App\Http\Requests\StoreFlatRequest;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -47,7 +46,7 @@ class StoreFlatRequestTest extends TestCase
     {
         $data = [
             'title' => 'Sample Flat',
-            'price' => 'not_a_number', // Invalid data type for 'price'
+            'price' => 'not_a_number',
             'description' => 'This is a sample flat description.',
             'location' => 'Sample Location',
         ];
@@ -55,6 +54,6 @@ class StoreFlatRequestTest extends TestCase
         $response = $this->post(route('flats.store'), $data);
 
         $response->assertSessionHasErrors('price');
-        $response->assertStatus(302); // Assuming a redirect after failed validation
+        $response->assertStatus(302);
     }
 }
