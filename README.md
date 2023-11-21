@@ -35,3 +35,15 @@ Enjoy building and exploring with "Flat"!
         ```
 
     Access your project at `http://127.0.0.1:8000` in your browser.
+
+## Accessing Images from the Public Folder
+
+In this project, you can store your images in the `public/images` directory. To access these images in your application, you can use the following URLs:
+
+-   ![Flat Tests Image](/public/storage/images/flat-tests.png) # Image of Flat Tests
+-   ![Home Image](/public/storage/images/home.png) # Image of Home
+-   ![Login Image](/public/storage/images/login.png) # Image of Login
+
+Replace `{flat-tests.png}`, `{home.png}`, and `{login.png}` with the actual names of your image files.
+
+Make sure to store your images in the `public/images` directory for easy access.
