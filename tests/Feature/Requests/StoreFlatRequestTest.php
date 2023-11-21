@@ -3,6 +3,7 @@
 namespace Tests\Feature\Requests\StoreFlatRequest;
 
 use App\Http\Requests\StoreFlatRequest;
+use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -13,6 +14,8 @@ class StoreFlatRequestTest extends TestCase
     /** @test */
     public function it_passes_validation_with_valid_data()
     {
+        $user = User::factory()->create();
+
         $data = [
             'title' => 'Sample Flat',
             'price' => 1000,
@@ -20,10 +23,10 @@ class StoreFlatRequestTest extends TestCase
             'location' => 'Sample Location',
         ];
 
-        $response = $this->post(route('flats.store'), $data);
+        $response = $this->actingAs($user)->post(route('flats.store'), $data);
 
         $response->assertSessionHasNoErrors();
-        $response->assertStatus(302); // Assuming a redirect after successful validation
+        $response->assertStatus(302);
     }
 
     /** @test */
