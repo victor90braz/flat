@@ -64,7 +64,6 @@ class FlatController extends Controller
         }
     }
 
-
     public function edit(Flat $flat): View
     {
         return view('pages.flats.edit', [

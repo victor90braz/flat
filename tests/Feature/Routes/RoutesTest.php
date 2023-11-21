@@ -94,4 +94,18 @@ class RoutesTest extends TestCase
 
         $response->assertSessionHas('success', 'The item was successfully deleted.');
     }
+
+    /** @test */
+    public function it_routes_to_flat_edit_action()
+    {
+        $flat = Flat::factory()->create();
+
+        $response = $this->get(route('flats.edit', ['flat' => $flat]));
+
+        $response->assertStatus(200);
+
+        $response->assertViewIs('pages.flats.edit');
+
+        $response->assertViewHas('flat', $flat);
+    }
 }
