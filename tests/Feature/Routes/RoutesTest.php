@@ -212,4 +212,27 @@ class RoutesTest extends TestCase
         $response->assertStatus(200)
                 ->assertViewIs('pages.login.index');
     }
+
+    /** @test */
+    public function it_logs_in_user_with_valid_credentials()
+    {
+        $validCredentials = [
+            'name' => 'John Doe',
+            'email' => 'valid@example.com',
+            'password' => bcrypt('validpassword'),
+        ];
+
+        $user = User::create($validCredentials);
+
+        $response = $this->post(route('login.store'), [
+            'email' => 'valid@example.com',
+            'password' => 'validpassword',
+        ]);
+
+        $response->assertRedirect('/')
+                ->assertSessionHas('success', 'Welcome Back!');
+
+        $this->assertAuthenticatedAs($user);
+    }
+
 }
