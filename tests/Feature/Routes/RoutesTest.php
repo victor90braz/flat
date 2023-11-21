@@ -204,6 +204,12 @@ class RoutesTest extends TestCase
                 ->assertSessionHas('success', 'Registration successful!');
     }
 
+    /** @test */
+    public function it_routes_to_login_create_action()
+    {
+        $response = $this->get(route('login.create'));
 
-
+        $response->assertStatus(200)
+                ->assertViewIs('pages.login.index');
+    }
 }

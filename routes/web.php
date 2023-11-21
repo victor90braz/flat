@@ -22,7 +22,7 @@ Route::delete('/flats/{flat}/comments/{comment}', [FlatCommentController::class,
 Route::get('register', [RegisterController::class, 'create'])->name('register.create');
 Route::post('register', [RegisterController::class, 'store'])->name('register.store');
 
-Route::get('login', [LoginController::class, 'create']);
+Route::get('login', [LoginController::class, 'create'])->name('login.create');
 Route::post('login', [LoginController::class, 'store']);
 
 Route::get('logout', [LogoutController::class, 'destroy'])->name('logout');
