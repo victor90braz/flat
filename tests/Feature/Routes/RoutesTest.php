@@ -5,6 +5,7 @@ namespace Tests\Feature\Routes;
 use App\Models\Flat;
 use App\Models\Comment;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Tests\TestCase;
 
 class RoutesTest extends TestCase
@@ -251,4 +252,17 @@ class RoutesTest extends TestCase
         $this->assertGuest();
     }
 
+    /** @test */
+    public function it_logs_out_authenticated_user()
+    {
+        $user = User::factory()->create();
+        Auth::login($user);
+
+        $response = $this->get(route('logout'));
+
+        $response->assertRedirect('/')
+                ->assertSessionHas('success', 'You have been successfully logged out. See you next time!');
+
+        $this->assertGuest();
+    }
 }
