@@ -80,4 +80,18 @@ class RoutesTest extends TestCase
         $response->assertViewHas('flat', $flat);
         $response->assertViewHas('comments', $flat->comments);
     }
+
+    /** @test */
+    public function it_routes_to_flat_delete_action()
+    {
+        $flat = Flat::factory()->create();
+
+        $response = $this->delete(route('flats.delete', ['flat' => $flat]));
+
+        $response->assertStatus(302);
+
+        $this->assertDatabaseMissing('flats', ['id' => $flat->id]);
+
+        $response->assertSessionHas('success', 'The item was successfully deleted.');
+    }
 }
