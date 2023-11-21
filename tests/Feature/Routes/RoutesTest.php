@@ -159,4 +159,24 @@ class RoutesTest extends TestCase
 
         $response->headers->get('Location');
     }
+
+    /** @test */
+    public function it_routes_to_flat_comment_delete_action()
+    {
+        $user = User::factory()->create();
+        $flat = Flat::factory()->create();
+        $comment = Comment::factory()->create(['flat_id' => $flat->id, 'user_id' => $user->id]);
+
+        $response = $this->actingAs($user)
+                        ->delete(route('flats.comments.delete', ['flat' => $flat->id, 'comment' => $comment->id]));
+
+        $response->assertStatus(302);
+
+        $this->assertDatabaseMissing('comments', [
+            'id' => $comment->id,
+        ]);
+
+        $response->headers->get('Location');
+    }
+
 }
