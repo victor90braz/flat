@@ -15,11 +15,13 @@ class LoginController extends Controller
         ]);
 
         if (!auth()->attempt($credentials)) {
-            return back()->withErrors([
-                'email' => 'Invalid login credentials. Please try again.',
-            ]);
+            return redirect(route('login.create'))
+                ->withErrors([
+                    'email' => 'Invalid login credentials. Please try again.',
+                ])->withInput(request(['email']));
         }
 
         return redirect("/")->with("success", "Welcome Back!");
     }
+
 }

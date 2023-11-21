@@ -235,4 +235,20 @@ class RoutesTest extends TestCase
         $this->assertAuthenticatedAs($user);
     }
 
+    /** @test */
+    public function it_does_not_log_in_user_with_invalid_credentials()
+    {
+        $invalidCredentials = [
+            'email' => 'invalid@example.com',
+            'password' => 'invalidpassword',
+        ];
+
+        $response = $this->post(route('login.store'), $invalidCredentials);
+
+        $response->assertRedirect(route('login.create'))
+                ->assertSessionHasErrors('email', 'Invalid login credentials. Please try again.');
+
+        $this->assertGuest();
+    }
+
 }
