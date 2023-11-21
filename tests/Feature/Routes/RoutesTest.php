@@ -140,20 +140,17 @@ class RoutesTest extends TestCase
     /** @test */
     public function it_routes_to_flat_comment_store_action()
     {
-        $user = User::factory()->create(); // Creating a user for testing
-        $flat = Flat::factory()->create(); // Creating a flat for testing
+        $user = User::factory()->create();
+        $flat = Flat::factory()->create();
 
         $data = [
             'body' => 'This is a test comment.',
         ];
 
-        $response = $this->actingAs($user) // Assume an authenticated user
-                        ->post(route('flats.comments.store', ['flat' => $flat->id]), $data);
+        $response = $this->actingAs($user) ->post(route('flats.comments.store', ['flat' => $flat->id]), $data);
 
-        // Check if the response is a redirect (status code 302)
         $response->assertStatus(302);
 
-        // Optionally, you can assert that the comment was created in the database
         $this->assertDatabaseHas('comments', [
             'user_id' => $user->id,
             'flat_id' => $flat->id,
