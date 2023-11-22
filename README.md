@@ -45,12 +45,6 @@ git clone https://github.com/victor90braz/flat.git
 
 ## Database Connection
 
-Ensure Laragon and TablePlus are optionally installed for database access:
-
--   **Laragon:** A local PHP development environment.
-
--   **TablePlus:** A modern database client with an elegant UI for managing various databases.
-
 Update your `.env` file with the appropriate database connection details:
 
 ```env
@@ -61,6 +55,8 @@ DB_DATABASE=flat
 DB_USERNAME=root
 DB_PASSWORD=
 ```
+
+Ensure Laragon and TablePlus are optionally installed for database access.
 
 ### Backend Setup
 
