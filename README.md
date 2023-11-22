@@ -8,12 +8,12 @@
 
 ## Technologies
 
--   **PHP (Laravel)**
--   **MySQL**
--   **Laragon**
--   **TablePlus**
--   **Unit Testing**
--   **Tailwind CSS**
+-   **PHP (Laravel):** Server-side scripting language and web application framework.
+-   **MySQL:** Relational database management system.
+-   **Laragon:** Local development environment for PHP.
+-   **TablePlus:** Modern database client with an elegant UI for managing various databases.
+-   **Unit Testing:** Testing method where individual units or components of a software are tested.
+-   **Tailwind CSS:** Utility-first CSS framework for rapidly building custom designs.
 
 ### CRUD Functionality
 
