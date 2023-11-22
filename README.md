@@ -27,13 +27,7 @@
 
 ## Getting Started
 
-### 1. Clone the Repository:
-
-```bash
-git clone https://github.com/victor90braz/flat.git
-```
-
-### 2. Check Installed Versions:
+### Check Installed Versions:
 
 ```bash
 php --version 8.2.10
@@ -41,7 +35,19 @@ node --version v18.17.1
 npm --version 10.0.0
 ```
 
-### 2. Database Connection:
+### Clone the Repository:
+
+```bash
+git clone https://github.com/victor90braz/flat.git
+```
+
+## Database Connection
+
+Ensure Laragon and TablePlus are optionally installed for database access:
+
+-   **Laragon:** A local PHP development environment.
+
+-   **TablePlus:** A modern database client with an elegant UI for managing various databases.
 
 Update your `.env` file with the appropriate database connection details:
 
@@ -54,7 +60,7 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-## Backend Setup
+### Backend Setup
 
 #### Install Dependencies:
 
