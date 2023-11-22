@@ -1,5 +1,3 @@
-Certainly! Here's a nicely formatted version of your README:
-
 ````markdown
 # Flat
 
