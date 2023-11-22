@@ -45,19 +45,19 @@ PHP (Laravel), MySQL, Unit Testing, and Tailwind CSS Project
 
 Install dependencies:
 
--                                                             composer install
+-                                                               composer install
 
 Run migrations and seed the database:
 
--                                                             php artisan migrate --seed
+-                                                               php artisan migrate --seed
 
 Start the Laravel application:
 
--                                                             php artisan serve
+-                                                               php artisan serve
 
 Run Tests:
 
--                                                             php artisan test
+-                                                               php artisan test
 
 Access your project at http://127.0.0.1:8000 in your browser.
 
@@ -65,7 +65,7 @@ Access your project at http://127.0.0.1:8000 in your browser.
 
 php --version
 
--                                                             PHP 8.2.10
+-                                                               PHP 8.2.10
 
 ### 4. Database Connection:
 
@@ -86,11 +86,11 @@ Make sure you have Node.js and NPM installed. Check your versions:
 
 node --version
 
--                                                     v18.17.1
+-                                                       v18.17.1
 
 npm --version
 
--                                                     10.0.0
+-                                                       10.0.0
 
 ### 2. Clone the Repository (if not done already):
 
@@ -98,36 +98,10 @@ npm --version
 
 ### 3. Install Frontend Dependencies:
 
--                                                   npm install
+-                                                     npm install
 
 ### 4. Start the Frontend Development Server:
 
--                                                   npm run dev
+-                                                     npm run dev
 
 Access your project at http://127.0.0.1:8000 in your browser.
-
-## Project Images
-
-### feature tests
-
-![Flat Tests Image](/storage/images/flat-tests.png)
-
-This image showcases the results of various feature tests for the "Flat" project. It includes tests for controllers, requests, routes, views, and components, covering functionalities like flat listing, user authentication, commenting, and more.
-
-### responsive design
-
-![Main Page Image](/storage/images/flat-home.png)
-
-This responsive main page design, crafted with Laravel and Tailwind CSS, renders all flats with features for users to create, edit, and view details. The mobile version is optimized for seamless user interaction.
-
-### form validation
-
-![Login Image](/storage/images/flat-login.png)
-
-This image represents a login page designed with Laravel and Tailwind CSS. The form includes request validation to ensure a secure and seamless user login experience.
-
-### routes
-
-![routes](/storage/images/flat-routes.png)
-
-This image represents a routes of pages and respectives controllers.
