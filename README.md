@@ -13,7 +13,7 @@
 
 ### CRUD Functionality
 
--   Users can Create, Read, Update, and Delete flat listings.
+-   Users can Create, Read, Update, and Delete flat listings and their own comments.
 
 ### User Authentication
 
