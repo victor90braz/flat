@@ -4,6 +4,8 @@
 
 "Flat" is like a friendly neighborhood bulletin board but on the web! It's your go-to spot for easy apartment living. Here, you can chat with neighbors, share thoughts about flats, and even leave helpful reviews. No more complicated processes – just a simple and interactive way for everyone to connect and make apartment living a breeze!
 
+-   **Responsive Design and Mobile Version**
+
 ## Technologies
 
 -   **PHP (Laravel)**
