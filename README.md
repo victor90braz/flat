@@ -4,7 +4,7 @@
 
 "Flat" is like a friendly bulletin board but on the web!
 
-Here, you can add your own flat card, chat with neighbors, share thoughts about flats, and even leave helpful reviews. Just a simple and interactive way for everyone to connect and make apartment living a breeze
+Here, you can add your own flat card, share thoughts about flats, and even leave helpful reviews. Just a simple and interactive way for everyone to connect and make apartment living a breeze
 
 With a responsive design and a dedicated mobile version.
 
