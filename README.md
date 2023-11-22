@@ -35,6 +35,7 @@ With a responsive design and a dedicated mobile version.
 
 ```bash
 php --version 8.2.10
+composer --version 2.6.5
 node --version v18.17.1
 npm --version 10.0.0
 ```
