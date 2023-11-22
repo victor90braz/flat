@@ -10,6 +10,8 @@
 
 -   **PHP (Laravel)**
 -   **MySQL**
+-   **Laragon**
+-   **TablePlus**
 -   **Unit Testing**
 -   **Tailwind CSS**
 
