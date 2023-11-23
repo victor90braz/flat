@@ -13,19 +13,23 @@ class FlatController extends Controller
 {
     public function index(): View
     {
+        return view('pages.flats.index', [
+            'flats' => $this->getFlats()->simplePaginate(6)
+        ]);
+    }
 
-        $flat = Flat::latest();
+    public function getFlats() {
+
+        $flats = Flat::latest();
 
         if(request('search')) {
-            $flat
+            $flats
             ->where('title', 'like', '%' . request('search') . '%')
             ->orWhere('price', 'like', '%' . request('search') . '%')
             ->orWhere('description', 'like', '%' . request('search') . '%');
         }
 
-        return view('pages.flats.index', [
-            'flats' => $flat->simplePaginate(6)
-        ]);
+        return $flats;
     }
 
     public function userFlats(Request $request): View
