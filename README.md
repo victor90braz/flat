@@ -2,8 +2,7 @@
 
 ## Project Overview
 
-Flat is like a friendly web platform where you can add your own flat card. It includes a details.
-You will find images, price per month and the location area, also share thoughts about the previous experiences, and even leave helpful reviews.
+Flat it is a simple page application. It is like a friendly web platform where you can add your own flat card. Check in detail page, there you will find images, price per month and the location area, also share thoughts about the previous experiences, and even leave helpful reviews.
 
 With a responsive design and a dedicated mobile version.
 
