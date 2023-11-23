@@ -13,7 +13,6 @@ With a responsive design and a dedicated mobile version.
 -   **PHP (Laravel)**
 -   **MySQL**
 -   **Laragon**
--   **Blade Template**
 -   **TablePlus**
 -   **Unit Testing**
 -   **Tailwind CSS**
