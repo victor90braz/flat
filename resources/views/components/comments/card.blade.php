@@ -1,6 +1,6 @@
 <footer>
     @auth
-        <form action="{{ route('flats.comments.store', ['flat' => $flat->id]) }}" method="POST" class="bg-white border border-gray-200 p-6 rounded-xl m-4">
+        <form action="{{ route('flats.comments.store', ['flat' => $flat->id]) }}" method="POST" class="bg-white border border-gray-200 p-4 rounded-xl m-4">
             @csrf
             <header class="flex flex-col items-center gap-4 p-4 bg-gray-100 rounded-xl shadow-md transition duration-300 hover:shadow-lg">
                 <div class="flex items-center gap-2">
@@ -18,7 +18,7 @@
     @endauth
 
     @foreach ($comments->reverse() as $comment)
-        <div class="m-4 border p-2 bg-blue-200 rounded-md relative">
+        <div class="m-4 border bg-blue-200 rounded-md relative">
             <article class="flex items-center">
                 <div class="flex flex-col items-center mr-4">
                     <img src="https://i.pravatar.cc/100?img={{ $comment->user->id }}" alt="avatar" class="rounded-full w-10 h-10">
