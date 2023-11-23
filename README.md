@@ -10,13 +10,13 @@ With a responsive design and a dedicated mobile version.
 
 ## Technologies
 
--   **PHP (Laravel):**
--   **MySQL:**
--   **Laragon:**
--   **Blade Template:**
--   **TablePlus:**
--   **Unit Testing:**
--   **Tailwind CSS:**
+-   **PHP (Laravel)**
+-   **MySQL**
+-   **Laragon**
+-   **Blade Template**
+-   **TablePlus**
+-   **Unit Testing**
+-   **Tailwind CSS**
 
 ### CRUD Functionality
 
