@@ -6,7 +6,8 @@
         "build": "vite build",
         "start": "php artisan serve",
         "tinker": "php artisan tinker",
-        "clean": "composer dump-autoload && php artisan clear-compiled && php artisan cache:clear && php artisan route:clear && php artisan config:clear && php artisan view:clear"
+        "clean": "composer dump-autoload && php artisan clear-compiled && php artisan cache:clear && php artisan route:clear && php artisan config:clear && php artisan view:clear",
+        "test": "php artisan test"
     },
     "devDependencies": {
         "@tailwindcss/aspect-ratio": "^0.4.2",
