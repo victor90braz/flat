@@ -13,7 +13,7 @@
 
         <div class="hidden sm:block ml-6">
             <div class="flex space-x-4 items-center">
-                <div>
+                <div class="hover:border border-blue-400">
                     <a href="/" aria-current="page" class="flex flex-col items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                              stroke="currentColor">
@@ -24,7 +24,7 @@
                     </a>
                 </div>
                 @if(Auth::user())
-                    <div>
+                    <div class="hover:border border-blue-400">
                         <a href="{{ route('flats.user') }}" aria-current="page" class="flex flex-col items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                  stroke="currentColor">
@@ -35,7 +35,7 @@
                         </a>
                     </div>
 
-                    <div>
+                    <div class="hover:border border-blue-400">
                         <a href="{{ route('flats.create') }}" aria-current="page" class="flex flex-col items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                  stroke="currentColor">
@@ -46,7 +46,7 @@
                         </a>
                     </div>
 
-                    <div>
+                    <div class="hover:border border-blue-400">
                         <a href="{{ route('logout') }}"
                            class="flex flex-col items-center text-red-600 hover:text-red-700"
                            aria-current="page">
