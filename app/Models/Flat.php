@@ -33,4 +33,17 @@ class Flat extends Model
     {
         return $this->hasMany(Comment::class);
     }
+
+    public function scopeFilter($query)
+    {
+
+        if(request('search')) {
+            $query
+            ->where('title', 'like', '%' . request('search') . '%')
+            ->orWhere('price', 'like', '%' . request('search') . '%')
+            ->orWhere('description', 'like', '%' . request('search') . '%');
+        }
+
+        return $query;
+    }
 }
