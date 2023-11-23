@@ -33,6 +33,15 @@
     </header>
 
     <main>
+
+        <div class="relative flex h-16 items-center justify-between ml-4 mr-4">
+            <form action="#" method="GET">
+                @csrf
+                <input type="text" name="search" placeholder="search by title...">
+                <button type="submit">search</button>
+            </form>
+        </div>
+
         @if ($flats->count() > 0)
             <ul class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4 mt-6">
                 @foreach ($flats as $flat)

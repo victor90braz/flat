@@ -13,8 +13,15 @@ class FlatController extends Controller
 {
     public function index(): View
     {
+
+        $flat = Flat::latest();
+
+        if(request('search')) {
+            $flat->where('price', 'like', '%' . request('search') . '%');
+        }
+
         return view('pages.flats.index', [
-            'flats' => Flat::latest()->simplePaginate(6)
+            'flats' => $flat->simplePaginate(6)
         ]);
     }
 
