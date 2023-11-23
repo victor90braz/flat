@@ -2,20 +2,20 @@
 
 ## Project Overview
 
-"Flat" is like a friendly bulletin board but on the web!
-
-Here, you can add your own flat card, share thoughts about flats, and even leave helpful reviews. Just a simple and interactive way for everyone to connect and make apartment living a breeze
+Flat is like a friendly web platform where you can add your own flat card. It includes a details.
+You will find images, price per month and the location area, also share thoughts about the previous experiences, and even leave helpful reviews.
 
 With a responsive design and a dedicated mobile version.
 
 ## Technologies
 
--   **PHP (Laravel):** Server-side scripting language and web application framework.
--   **MySQL:** Relational database management system.
--   **Laragon:** Local development environment for PHP.
--   **TablePlus:** Modern database client with an elegant UI for managing various databases.
--   **Unit Testing:** Testing method where individual units or components of a software are tested.
--   **Tailwind CSS:** Utility-first CSS framework for rapidly building custom designs.
+-   **PHP (Laravel):**
+-   **MySQL:**
+-   **Laragon:**
+-   **Blade Template:**
+-   **TablePlus:**
+-   **Unit Testing:**
+-   **Tailwind CSS:**
 
 ### CRUD Functionality
 
@@ -59,7 +59,7 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-Ensure Laragon and TablePlus are optionally installed for database access.
+I chose Laragon and TablePlus, but they are optionally. You can use one of your preference for database access.
 
 ### Backend Setup
 
@@ -89,6 +89,8 @@ npm install
 
 ```bash
 php artisan serve
+or
+npm run start
 ```
 
 ### Start the Frontend Development Server:
@@ -107,22 +109,25 @@ http://127.0.0.1:8000
 
 ```bash
 php artisan test
+or
+npm run test
 ```
 
 ## Features
 
 ### Dynamic Home Page
 
--   Discover all flats created by users, with detailed listings for a comprehensive view.
+-   In home page you will find all flats created by users, with detailed listings for a comprehensive view.
+    Every page has a navigate session where for user, they can also create their flats cards.
 
 ### Flat Details Section
 
--   Explore flat listings in-depth. Engage in discussions and share insights by adding comments. Users can manage their listings with ease.
+-   Search for settings to edit or update your own card. Also explore flat listings in-depth.
 
 ### Comments Feature
 
--   Enrich discussions by commenting on flat listings. Share thoughts, ask questions, and interact seamlessly.
+-   Share thoughts, ask questions, and interact seamlessly.
 
 ### My Flats Section
 
--   A personalized space for users to manage their flats effortlessly.
+-   A personalized space for users to manage their favorites flats.
