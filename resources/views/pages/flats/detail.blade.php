@@ -17,8 +17,7 @@
         <div class="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
           <img src="https://plus.unsplash.com/premium_photo-1680100256112-2e1231d9d0df?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Model wearing plain white basic tee." class="h-full w-full object-cover object-center">
         </div>
-      </div>
-
+    </div>
 
     <div class="flex flex-col bg-white shadow-md rounded-lg overflow-hidden p-4 ml-4 mr-4 mb-2 mt-4">
 
