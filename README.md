@@ -126,7 +126,7 @@ npm run test
 
 ### Comments Feature
 
--   Share thoughts, ask questions, and interact seamlessly.
+-   Share thoughts, ask questions, and interact seamlessly. Find out in Flat Details.
 
 ### My Flats Section
 
