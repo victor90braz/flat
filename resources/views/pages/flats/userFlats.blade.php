@@ -7,8 +7,6 @@
 @section('content')
     <h2 class="text-2xl font-bold mb-4 ml-4">My Flats</h2>
 
-
-
     @if ($flats->count() > 0)
 
         @include('components.search.searchFlat')
