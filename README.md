@@ -31,7 +31,7 @@ With a responsive design and a dedicated mobile version.
 
 ## Getting Started
 
-### Check Installed Versions:
+### Requirements - check installed versions:
 
 ```bash
 php --version 8.2.10
