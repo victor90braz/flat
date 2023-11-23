@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Arr;
 
 /**
  * @property int $id
@@ -34,10 +35,10 @@ class Flat extends Model
         return $this->hasMany(Comment::class);
     }
 
-    public function scopeFilter($query)
+    public function scopeFilter($query, array $filters)
     {
 
-        if(request('search')) {
+        if($filters['search'] ?? null) {
             $query
             ->where('title', 'like', '%' . request('search') . '%')
             ->orWhere('price', 'like', '%' . request('search') . '%')

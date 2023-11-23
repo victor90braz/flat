@@ -14,7 +14,7 @@ class FlatController extends Controller
     public function index(): View
     {
         return view('pages.flats.index', [
-            'flats' => Flat::latest()->filter()->simplePaginate(6)
+            'flats' => Flat::latest()->filter(request(['search']))->simplePaginate(6)
         ]);
     }
 
