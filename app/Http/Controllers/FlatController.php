@@ -17,7 +17,10 @@ class FlatController extends Controller
         $flat = Flat::latest();
 
         if(request('search')) {
-            $flat->where('title', 'like', '%' . request('search') . '%');
+            $flat
+            ->where('title', 'like', '%' . request('search') . '%')
+            ->orWhere('price', 'like', '%' . request('search') . '%')
+            ->orWhere('description', 'like', '%' . request('search') . '%');
         }
 
         return view('pages.flats.index', [

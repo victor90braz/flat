@@ -37,7 +37,7 @@
         <div class="relative flex h-16 items-center justify-between ml-4 mr-4">
             <form action="#" method="GET">
                 @csrf
-                <input type="text" name="search" placeholder="search by title...">
+                <input type="text" name="search" placeholder="search by title..." value="{{request('search')}}">
                 <button type="submit">search</button>
             </form>
         </div>
