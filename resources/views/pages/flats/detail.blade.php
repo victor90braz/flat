@@ -2,6 +2,34 @@
 
 @section('content')
 
+    @auth
+        @if(auth()->user()->id === $flat->user_id)
+            <div class="flex justify-start flex-1 ml-8">
+                <div class="flex items-stretch">
+                    <div class="dropdown dropdown-end">
+                        <label tabindex="0" class="btn btn-ghost rounded-btn"> {{ucwords('Settings')}} </label>
+                        <ul tabindex="0" class="menu dropdown-content z-[1] p-2 shadow bg-base-200 rounded-box w-fit mt-4">
+                            <li class="mb-2">
+                                <a href="{{ route('flats.edit', ['flat' => $flat->id]) }}"
+                                    class="px-4 py-2 border-2 border-yellow-500 rounded-lg text-yellow-500 hover:bg-yellow-500 hover:text-white">
+                                    Edit
+                                </a>
+                            </li>
+                            <li>
+                                <form action="{{ route('flats.delete', ['flat' => $flat->id ]) }}" method="POST"
+                                    class="block px-4 py-2 border-2 border-red-500 rounded-lg text-red-500 hover:bg-red-500 hover:text-white">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit">Delete</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        @endif
+    @endauth
+
     <div class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
         <div class="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block">
           <img src="{{$images[0]}}">
@@ -25,34 +53,6 @@
             <div class="flex-1 px-2 lg:flex-none">
                 <h1 class="text-2xl font-semibold">{{ ucwords($flat->title) }}</h1>
             </div>
-
-            @auth
-                @if(auth()->user()->id === $flat->user_id)
-                    <div class="flex justify-end flex-1 px-2">
-                        <div class="flex items-stretch">
-                            <div class="dropdown dropdown-end">
-                                <label tabindex="0" class="btn btn-ghost rounded-btn">Settings</label>
-                                <ul tabindex="0" class="menu dropdown-content z-[1] p-2 shadow bg-base-200 rounded-box w-fit mt-4">
-                                    <li class="mb-2">
-                                        <a href="{{ route('flats.edit', ['flat' => $flat->id]) }}"
-                                            class="px-4 py-2 border-2 border-yellow-500 rounded-lg text-yellow-500 hover:bg-yellow-500 hover:text-white">
-                                            Edit
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <form action="{{ route('flats.delete', ['flat' => $flat->id ]) }}" method="POST"
-                                            class="block px-4 py-2 border-2 border-red-500 rounded-lg text-red-500 hover:bg-red-500 hover:text-white">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit">Delete</button>
-                                        </form>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                @endif
-            @endauth
         </header>
 
         <article class="mt-4 border p-4 rounded-lg">

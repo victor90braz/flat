@@ -19,7 +19,7 @@
 
     @foreach ($comments->reverse() as $comment)
         <div class="m-4 border bg-blue-200 rounded-md relative">
-            <article class="flex items-center">
+            <article class="flex items-center p-2">
                 <div class="flex flex-col items-center mr-4">
                     <img src="https://i.pravatar.cc/100?img={{ $comment->user->id }}" alt="avatar" class="rounded-full w-10 h-10">
                     <header class="flex flex-col items-center text-xs">
