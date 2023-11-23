@@ -12,7 +12,7 @@ class FlatTest extends TestCase
     /** @test */
     public function it_displays_the_search_form()
     {
-        $response = $this->get('/'); // Update the URL based on your route
+        $response = $this->get('/');
 
         $response->assertSuccessful();
         $response->assertSee('<form action="#" method="GET">', false);
