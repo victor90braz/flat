@@ -23,7 +23,7 @@ class FlatController extends Controller
         /** @var User $user */
         $user = $request->user();
 
-        $flats = $user->flats()->simplePaginate(6);
+        $flats = $user->flats()->filter(request(['search']))->simplePaginate(6);
 
         return view('pages.flats.userFlats', [
             'flats' => $flats,
