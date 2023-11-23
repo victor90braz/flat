@@ -117,8 +117,8 @@ npm run test
 
 ### Dynamic Home Page
 
--   In home page you will find all flats created by users, with detailed listings for a comprehensive view.
-    Every page has a navigate session where for user, they can also create their flats cards.
+-   On the home page you will find all user-created apartments, with detailed listings for a comprehensive overview.
+-   Each page has a navigation section where the user can create a new flat or simply logout.
 
 ### Flat Details Section
 
