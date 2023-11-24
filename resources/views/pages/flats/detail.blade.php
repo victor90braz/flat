@@ -30,7 +30,7 @@
         @endif
     @endauth
 
-    <div class="mx-auto p-4 mt-6 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
+    <div class="mx-auto p-2 mt-4 sm:px-6 lg:grid lg:max-w-8xl lg:grid-cols-3">
 
         <!-- First Column (Full-width on small screens) -->
         <div class="sm:w-full lg:w-auto lg:col-span-1 lg:mr-8 mb-4 lg:mb-0">
@@ -59,7 +59,6 @@
         </div>
 
     </div>
-
 
 
     <div class="flex flex-col bg-white shadow-md rounded-lg overflow-hidden p-4 ml-4 mr-4 mb-2 mt-4">
