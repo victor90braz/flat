@@ -30,7 +30,9 @@
         @endif
     @endauth
 
-    @include('components.imagesCollection.imagesCollection')
+    @include('components.imagesCollection.imagesCollection', [
+        'images' => $images
+    ])
 
     <div class="flex flex-col bg-white shadow-md rounded-lg overflow-hidden p-4 ml-4 mr-4 mb-2 mt-4">
 
