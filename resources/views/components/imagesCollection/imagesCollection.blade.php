@@ -6,13 +6,13 @@
         </div>
     </div>
 
-    <div class=" gap-2 hidden sm:grid sm:grid-cols-2 lg:grid lg:px-0">
+    <div class="gap-2 sm:grid sm:grid-cols-2 lg:grid lg:px-0">
 
         <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
             <img src="{{ $images[0] }}" alt="Model wearing plain black basic tee." class="w-full h-full object-cover object-center">
         </div>
         <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
-            <img src="{{ $images[0] }}" alt="Model wearing plain gray basic tee." class="w-full h-full object-cover object-center">
+            <img src="{{ $images[0] }}" alt="Model wearing plain black basic tee." class="w-full h-full object-cover object-center">
         </div>
 
     </div>
