@@ -4,7 +4,7 @@
 
 Flat is like a friendly web platform, where you can interact with other users and add your flat card.
 Make sure to register to get a better user experience and to have access to all features.
-Check in detail page. There, you will find some information about the flats, such as images, prices per month and the location area. Also, read thoughts about previous experiences, and even leave helpful reviews.
+Check in detail page. There, you will find a section settings and some information about the flats, such as images, prices per month and the location area. Also, read thoughts about previous experiences, and even leave helpful reviews.
 
 With a responsive design and a dedicated mobile version.
 
