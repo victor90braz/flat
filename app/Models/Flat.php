@@ -41,8 +41,10 @@ class Flat extends Model
             $query
             ->where('title', 'like', '%' . request('search') . '%')
             ->orWhere('price', 'like', '%' . request('search') . '%')
-            ->orWhere('description', 'like', '%' . request('search') . '%');
-        }
+            ->orWhere('description', 'like', '%' . request('search') . '%')
+            ->orWhereHas('category', fn ($query) =>
+            $query->where('city', 'like', '%' . request('search') . '%')
+        );        }
 
         return $query;
     }
