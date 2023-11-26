@@ -16,19 +16,19 @@
             <select id="category" name="category" autocomplete="current-category" required class="block w-full rounded-md border-0 py-1.5 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                 <option value="" disabled>Select a category</option>
                 @foreach ($categories as $category)
-                    <option value="{{ $category->id }}" @if($category->id === $flat->category_id) selected @endif>{{ ucwords($category->city) }}</option>
+                    <option value="{{ $category->id }}" @if($category->id === $flat->category_id) selected @endif>{{ strtoupper($category->city) }}</option> <!-- Uppercase the city -->
                 @endforeach
             </select>
 
             <div>
-                <label for="title" class="block text-sm font-medium leading-6 text-gray-900">Title</label>
+                <label for="title" class="block text-sm font-medium leading-6 text-gray-900 uppercase">Title</label> <!-- Uppercase -->
                 <div class="mt-2">
                     <input id="title" name="title" type="text" value="{{ $flat->title }}" autocomplete="current-title" required class="block w-full rounded-md border-0 py-1.5 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                 </div>
             </div>
 
             <div>
-                <label for="price" class="block text-sm font-medium leading-6 text-gray-900">Price</label>
+                <label for="price" class="block text-sm font-medium leading-6 text-gray-900 uppercase">Price</label> <!-- Uppercase -->
                 <div class="relative mt-2 rounded-md shadow-sm">
                   <input type="text" name="price" id="price" value="{{ $flat->price }}" class="block w-full rounded-md border-0 py-1.5 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="0.00">
                   <div class="absolute inset-y-0 right-0 flex items-center">
@@ -41,14 +41,14 @@
               </div>
 
               <div>
-                <label for="description" class="block text-sm font-medium leading-6 text-gray-900">DESCRIPTION</label>
+                <label for="description" class="block text-sm font-medium leading-6 text-gray-900 uppercase">DESCRIPTION</label> <!-- Uppercase -->
                 <div class="mt-2">
                     <textarea name="description" id="description" cols="50" rows="5" class="block w-full rounded-md border-0 py-1.5 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">{{ $flat->description }}</textarea>
                 </div>
             </div>
 
             <div>
-                <label for="location" class="block text-sm font-medium leading-6 text-gray-900">LOCATION</label>
+                <label for="location" class="block text-sm font-medium leading-6 text-gray-900 uppercase">LOCATION</label> <!-- Uppercase -->
                 <div class="mt-2">
                     <input id="location" name="location" type="text" value="{{ $flat->location }}" autocomplete="current-location" required class="block w-full rounded-md border-0 py-1.5 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                 </div>
