@@ -36,7 +36,6 @@ class Flat extends Model
 
     public function scopeFilter($query, array $filters)
     {
-
         if($filters['search'] ?? null) {
             $query
             ->where('title', 'like', '%' . request('search') . '%')
