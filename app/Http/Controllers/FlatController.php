@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreFlatRequest;
+use App\Models\Category;
 use App\Models\Flat;
 use App\Models\User;
 use Illuminate\Http\RedirectResponse;
@@ -47,20 +48,29 @@ class FlatController extends Controller
 
     public function create(): View
     {
-        return view('pages.flats.create');
+        return view('pages.flats.create', [
+            'categories' => Category::all()
+        ]);
     }
 
     public function store(StoreFlatRequest $request): RedirectResponse
     {
         $attributes = $request->validated();
         $attributes['user_id'] = $request->user()->id;
+        $category = Category::where('city', $request->input('category'))->first();
+
+        if ($category) {
+            $attributes['category_id'] = $category->id;
+        } else {
+            // Handle the case where the category is not found
+            return redirect('/')->with('error', 'Invalid category selected');
+        }
 
         $flat = Flat::create($attributes);
 
         if ($flat) {
             return redirect('/')->with('success', 'New flat created');
         } else {
-            // Log the error or handle it accordingly
             return redirect('/')->with('error', 'Failed to create a new flat');
         }
     }

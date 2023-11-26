@@ -18,7 +18,6 @@ class CategoryFactory extends Factory
     {
         return [
             'city' => $this->faker->unique()->word(),
-            'slug' => $this->faker->unique()->slug()
         ];
     }
 }

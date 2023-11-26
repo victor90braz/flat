@@ -13,9 +13,14 @@
         @csrf
 
         <div>
-            <label for="city" class="block text-sm font-medium leading-6 text-gray-900">City</label>
+            <label for="category" class="block text-sm font-medium leading-6 text-gray-900">Category</label>
             <div class="mt-2">
-              <input id="city" name="city" type="text" autocomplete="current-city" required class="block w-full rounded-md border-0 py-1.5 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                <select id="category" name="category" autocomplete="current-category" required class="block w-full rounded-md border-0 py-1.5 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    <option value="" disabled selected>Select a city</option>
+                    @foreach ($categories as $category)
+                        <option value="{{ $category->city }}">{{ $category->city }}</option>
+                    @endforeach
+                </select>
             </div>
         </div>
 

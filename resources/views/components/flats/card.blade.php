@@ -4,7 +4,11 @@
 
 <div class="bg-white shadow-md rounded-lg overflow-hidden p-4">
     <div class="mt-4">
-        <a href="#" rel="noopener noreferrer"><strong>{{ $flat->category->city }}</strong></a>
+        @if ($flat->category)
+            <a href="#" rel="noopener noreferrer"><strong>{{ $flat->category->city }}</strong></a>
+        @else
+            <span>No category</span>
+        @endif
     </div>
 
     <div class="relative overflow-hidden">
