@@ -11,6 +11,6 @@ class Category extends Model
 
     public function flat()
     {
-        return $this->hasOne(Flat::class);
+        return $this->hasMany(Flat::class);
     }
 }
