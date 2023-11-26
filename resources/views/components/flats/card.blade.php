@@ -4,7 +4,7 @@
 
 <div class="bg-white shadow-md rounded-lg overflow-hidden p-4">
     <div class="mt-4">
-        <a href="#" rel="noopener noreferrer"><strong>{{ $flat->category->name }}</strong></a>
+        <a href="#" rel="noopener noreferrer"><strong>{{ $flat->category->city }}</strong></a>
     </div>
 
     <div class="relative overflow-hidden">
