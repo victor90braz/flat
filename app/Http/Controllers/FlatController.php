@@ -62,7 +62,6 @@ class FlatController extends Controller
         if ($category) {
             $attributes['category_id'] = $category->id;
         } else {
-            // Handle the case where the category is not found
             return redirect('/')->with('error', 'Invalid category selected');
         }
 
@@ -79,14 +78,18 @@ class FlatController extends Controller
     {
         return view('pages.flats.edit', [
             'flat' => $flat,
+            'categories' => Category::all()
         ]);
     }
 
     public function update(Flat $flat, StoreFlatRequest $request): RedirectResponse
     {
-        $flat->update($request->validated());
+        $validatedData = $request->validated();
+
+        $validatedData['category_id'] = $request->input('category');
+
+        $flat->update($validatedData);
 
         return redirect('/')->with('success', 'Flat updated successfully!');
     }
-
 }
