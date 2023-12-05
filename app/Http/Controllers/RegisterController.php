@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use Exception; // Import the Exception class
-
 class RegisterController extends Controller
 {
     public function create() {
@@ -14,9 +12,9 @@ class RegisterController extends Controller
     public function store()
     {
         $attributes = request()->validate([
-            'name' => ['required', 'max:255'],
-            'email' => ['required', 'email', 'max:255'],
-            'password' => ['required', 'min:7', 'max:255']
+            'name' => ['required', 'max:191'],
+            'email' => ['required', 'email', 'max:191'],
+            'password' => ['required', 'min:7', 'max:191']
         ]);
 
         (new User())->create($attributes);
