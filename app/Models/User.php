@@ -51,11 +51,8 @@ class User extends Authenticatable
 
     public function users()
     {
-        $image = ['https://plus.unsplash.com/premium_photo-1680100256112-2e1231d9d0df?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'];
-
         return view('components.users.users', [
-            'users' => User::all(),
-            'image' => $image
+            'users' => User::all()
         ]);
     }
 }
