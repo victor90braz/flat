@@ -6,6 +6,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 use App\Models\Flat;
+use App\Models\Response;
 
 class FlatTest extends TestCase
 {
@@ -18,7 +19,7 @@ class FlatTest extends TestCase
 
         $response = $this->get('/');
 
-        $response->assertStatus(200);
+        $response->assertStatus(Response::HTTP_OK);
 
         $response->assertViewIs('pages.flats.index');
         $response->assertViewHas('flats');
