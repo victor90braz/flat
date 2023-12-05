@@ -23,6 +23,18 @@
                         Home
                     </a>
                 </div>
+
+                <div class="hover:border border-blue-400">
+                    <a href="{{ route('users') }}" aria-current="page" class="flex flex-col items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                        </svg>
+                        Users
+                    </a>
+                </div>
+
                 @if(Auth::user())
                     <div class="hover:border border-blue-400">
                         <a href="{{ route('flats.user') }}" aria-current="page" class="flex flex-col items-center">

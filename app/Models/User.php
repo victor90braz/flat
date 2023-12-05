@@ -48,4 +48,11 @@ class User extends Authenticatable
     {
         return $this->hasMany(Comment::class);
     }
+
+    public function users()
+    {
+        return view('components.users.users', [
+            'users' => User::all()
+        ]);
+    }
 }

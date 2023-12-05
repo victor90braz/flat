@@ -5,6 +5,7 @@ use App\Http\Controllers\FlatController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\RegisterController;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [FlatController::class, 'index']);
@@ -26,3 +27,6 @@ Route::get('login', [LoginController::class, 'create'])->name('login.create');
 Route::post('login', [LoginController::class, 'store'])->name('login.store');
 
 Route::get('logout', [LogoutController::class, 'destroy'])->name('logout');
+
+Route::get('users', [User::class, 'users'])->name('users');
+
