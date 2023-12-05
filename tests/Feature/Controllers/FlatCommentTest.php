@@ -7,6 +7,7 @@ use Tests\TestCase;
 use App\Models\Flat;
 use App\Models\User;
 use App\Models\Comment;
+use Illuminate\Http\Response;
 
 class FlatCommentTest extends TestCase
 {
@@ -25,7 +26,7 @@ class FlatCommentTest extends TestCase
             'body' => 'This is a test comment.',
         ]);
 
-        $response->assertStatus(302);
+        $response->assertStatus(Response::HTTP_FOUND);
 
         $this->assertDatabaseHas('comments', [
             'user_id' => $user->id,
