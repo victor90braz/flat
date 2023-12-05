@@ -10,6 +10,9 @@
         </div>
 
         <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+
+            @include('pages.register.formErrors')
+
             <form class="space-y-6" action="/register" method="POST">
                 @csrf
                 <div>
