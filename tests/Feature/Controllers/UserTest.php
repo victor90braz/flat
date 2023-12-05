@@ -3,6 +3,7 @@
 namespace Tests\Feature\Controllers;
 
 use App\Models\Experience;
+use App\Models\Response;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -19,7 +20,7 @@ class UserTest extends TestCase
 
         $response = $this->actingAs($user)->get('/api/user');
 
-        $response->assertStatus(Experience::HTTP_OK);
+        $response->assertStatus(Response::HTTP_OK);
         $response->assertJson(['email' => $user->email]);
     }
 }
