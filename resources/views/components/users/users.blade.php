@@ -14,6 +14,9 @@
             <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
                 <p class="mt-1 text-xs leading-5 text-gray-500">Last seen <time datetime="2023-01-23T13:23Z">{{$user->created_at}}</time></p>
             </div>
+            <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                <a href="{{route('user.edit')}}" class="mt-1 text-xs leading-5 text-gray-500">Edit</a>
+            </div>
             </li>
         @endforeach
     </ul>
