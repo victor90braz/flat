@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function edit() {
-        return view('pages.user.edit');
+    public function edit(User $user) {
+        return view('pages.user.edit', compact('user', ));
     }
 
     public function store(Request $request) {
