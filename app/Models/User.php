@@ -51,8 +51,13 @@ class User extends Authenticatable
 
     public function users()
     {
+
+        $users = User::query()
+        ->orderBy('name')
+        ->simplePaginate(4);
+
         return view('components.users.users', [
-            'users' => User::all()
+            'users' => $users
         ]);
     }
 }

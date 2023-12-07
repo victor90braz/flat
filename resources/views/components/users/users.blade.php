@@ -2,7 +2,7 @@
 
 @section('content')
     <ul role="list" class="divide-y divide-gray-100">
-        @foreach ($users->reverse() as $user)
+        @foreach ($users as $user)
         <li class="flex justify-between gap-x-6 py-5 m-6">
             <div class="flex min-w-0 gap-x-4">
                 <img class="h-12 w-12 flex-none rounded-full bg-gray-50" src="https://i.pravatar.cc/100?img={{ $user->id }}" alt="User profile">
