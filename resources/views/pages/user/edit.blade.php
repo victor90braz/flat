@@ -3,6 +3,21 @@
 @section('content')
 
 <div class="flex min-h-full flex-col justify-center px-2 py-8 lg:px-8">
+
+    @if(session('success'))
+        <div id="success-message"
+            class="fixed bottom-0 right-0 bg-green-100 border-l-4 border-green-500 text-green-700 p-4 z-50">
+            <p>{{ session('success') }}</p>
+        </div>
+        @push('scripts')
+            <script>
+                setTimeout(function () {
+                    document.getElementById('success-message').style.display = 'none';
+                }, 2000);
+            </script>
+        @endpush
+    @endif
+
     <div class="sm:mx-auto sm:w-full sm:max-w-sm">
         <img class="mx-auto h-10 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company">
         <h2 class="text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Edit User Profile</h2>
