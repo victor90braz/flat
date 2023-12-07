@@ -11,9 +11,10 @@ class UserController extends Controller
         return view('pages.user.edit', compact('user', ));
     }
 
-    public function store(Request $request) {
-
-        dd($request->all());
-        //return view('pages.user.store');
+    public function update(User $user, Request $request) {
+        $userData = $request->except(['_token', '_method']);
+        $user->update($userData);
+        return redirect()->route('user.edit', ['user' => $user])->with('success', 'User updated successfully');
     }
+
 }

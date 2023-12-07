@@ -32,5 +32,5 @@ Route::get('logout', [LogoutController::class, 'destroy'])->name('logout');
 Route::get('users', [User::class, 'users'])->name('users');
 
 Route::get('user/{user}/edit', [UserController::class, 'edit'])->name('user.edit');
-Route::patch('user/store', [UserController::class, 'store'])->name('user.store');
+Route::patch('user/{user}/update', [UserController::class, 'update'])->name('user.update');
 
