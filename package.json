@@ -8,7 +8,8 @@
         "tinker": "php artisan tinker",
         "clean": "composer dump-autoload && php artisan clear-compiled && php artisan cache:clear && php artisan route:clear && php artisan config:clear && php artisan view:clear",
         "test": "php artisan test",
-        "unitTest": "php artisan test --filter="
+        "unitTest": "php artisan test --filter=",
+        "debugbar": "composer require barryvdh/laravel-debugbar --dev"
     },
     "devDependencies": {
         "@tailwindcss/aspect-ratio": "^0.4.2",
