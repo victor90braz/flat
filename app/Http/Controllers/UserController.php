@@ -9,10 +9,10 @@ class UserController extends Controller
 {
     public function users()
     {
-
         $users = User::query()
+        ->search(request('search'))
         ->orderBy('name')
-        ->simplePaginate(4);
+        ->simplePaginate(100);
 
         return view('components.users.users', [
             'users' => $users

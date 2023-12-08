@@ -48,4 +48,15 @@ class User extends Authenticatable
     {
         return $this->hasMany(Comment::class);
     }
+
+    public function scopeSearch($query, string $term = null)
+    {
+        collect(explode(' ', $term))->filter()->each(function ($term) use ($query) {
+            $term = '%' . $term . '%';
+            $query->where('name', 'like', $term)
+                ->orWhere('email', 'like', $term);
+        });
+    }
+
+
 }
