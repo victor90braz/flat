@@ -1,6 +1,9 @@
 @extends('app')
 
 @section('content')
+
+    <x-search.search/>
+
     <ul role="list" class="divide-y divide-gray-100">
         @foreach ($users as $user)
         <li class="flex justify-between gap-x-6 py-5 m-6">

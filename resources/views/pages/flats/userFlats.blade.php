@@ -9,7 +9,7 @@
 
     @if ($flats->count() > 0)
 
-        @include('components.search.flat')
+        @include('components.search.search')
 
         <ul class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4 mt-6">
             @foreach ($flats as $flat)
