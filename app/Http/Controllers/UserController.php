@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -13,6 +14,12 @@ class UserController extends Controller
         ->search(request('search'))
         ->orderBy('name')
         ->simplePaginate(100);
+
+        $authenticatedUser = Auth::user();
+
+        foreach ($users as $user) {
+            $user->is_owner = $user->id === $authenticatedUser->id;
+        }
 
         return view('components.users.users', [
             'users' => $users
