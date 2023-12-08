@@ -13,12 +13,13 @@ class UserController extends Controller
         $users = User::query()
         ->search(request('search'))
         ->orderBy('name')
+        ->orderBy('email')
         ->simplePaginate(100);
 
         $authenticatedUser = Auth::user();
 
         foreach ($users as $user) {
-            $user->is_owner = $user->id === $authenticatedUser->id;
+            $user->is_owner = $authenticatedUser && $user->id === $authenticatedUser->id;
         }
 
         return view('components.users.users', [

@@ -20,6 +20,9 @@ return new class extends Migration
             $table->rememberToken();
             $table->boolean('is_owner')->default(false);
             $table->timestamps();
+
+            $table->index(['name', 'email']);
+
         });
     }
 
