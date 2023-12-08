@@ -11,7 +11,7 @@
                 <div>
                     <img class="h-12 w-12 flex-none rounded-full bg-gray-50" src="https://i.pravatar.cc/100?img={{ $user->id }}" alt="User profile">
                     @if ($user->is_owner)
-                    <p class="text-sm font-semibold leading-6 text-red-500 ">is owner</p>
+                    <p class="text-sm font-semibold leading-6 text-red-500 ">owner</p>
                     @endif
                 </div>
 
