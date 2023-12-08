@@ -48,16 +48,4 @@ class User extends Authenticatable
     {
         return $this->hasMany(Comment::class);
     }
-
-    public function users()
-    {
-
-        $users = User::query()
-        ->orderBy('name')
-        ->simplePaginate(4);
-
-        return view('components.users.users', [
-            'users' => $users
-        ]);
-    }
 }
